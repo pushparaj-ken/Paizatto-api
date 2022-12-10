@@ -1,0 +1,82 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Refer Vendor",
+		"_postman_id": "00e9f88c-6001-c4e9-9692-5f52f7668a60",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Refer Vendor List",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/refervendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"referredBy\":\"MURTHY\",\n    \"shopName\":\"TEST STORE\",\n\t\"dealerName\":\"TEST DEALER\",\n    \"phoneNumber\":9640350947,\n    \"email\":\"abc@gmail.com\",\n    \"id\":1,\n    \"name\":\"Category Name\",\n    \"no\":\"5-47-a\",\n    \"street\":\"STreet 1\",\n    \"city\":\"HYderabad\",\n    \"pincode\":500081,\n    \"state\":\"Telangana\",\n    \"country\":\"India\",\n\t\"type\":\"geometry\",\n\t\"coordinates\":[1.72841,1.25894],\n\t\"index\":\"2dSphere\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Refer Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/refervendor",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Refer Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/updaterefervendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n    \"referredBy\": \"MURTHY ch\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Refer Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/deleterefervendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1042 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Enrich Vendors",
+		"_postman_id": "a4c4f7e8-f4b7-4ab8-3789-e20ea8507af2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":9640359075,\n\t\"Password\":\"windows@98\",\n    \"fcmToken\":\"Temp\"\n}"
+				},
+				"description": "\"username\":\"V00000004\",\n\"phoneNumber\":9550283038"
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/forgotpassword",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":9550283038\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Vendor Password",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/updatepassword",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwMDQiLCJpYXQiOjE2MzQzOTAzODQsImV4cCI6MTYzNDM5MDUwNH0.IB9SpUB-T5ZOA_bJOyr7HnhkizxJZJ9MJQgrzhS5xg8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"CurrentPassword\":\"windows@99\",\n\t\"NewPasword\":\"windows@98\"\n}"
+				},
+				"description": "Update Vendor Password"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Vendor Address",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/profile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwMDQiLCJpYXQiOjE2MzQzOTAzODQsImV4cCI6MTYzNDM5MDUwNH0.IB9SpUB-T5ZOA_bJOyr7HnhkizxJZJ9MJQgrzhS5xg8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Address\": {\n        \"no\": \"5-48\",\n        \"street\": \"New Main\",\n        \"pincode\": 500081,\n        \"state\": \"Telangana\",\n        \"country\": \"India\",\n        \"city\": \"Hyderabad\",\n        \"geometry\": {\n            \"type\": \"Point\",\n            \"coordinates\": [\n                17.450478,\n                78.381089\n            ],\n            \"index\": \"2dsphere\"\n        }\n    }\n}"
+				},
+				"description": "Update Vendor Password"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Vendor Bank Details",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/profile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwMDYiLCJpYXQiOjE2Mzk0NDcwMzAsImV4cCI6MTYzOTQ0NzE1MH0.8GnhgzgccgX5zsc31uE4wKVvAjqlhr1xWC0fod54b4E"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Bank\":{\n\t\t\"accountholdername\":\"Narayana Murthy\",\n\t\t\"accountnumber\":\"32659927187\",\n\t\t\"ifsccode\":\"SBIN0002750\"\n\t},\n    \"fcmToken\":\"Test Token\"\n}"
+				},
+				"description": "Update Vendor Password"
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor KYC",
+			"request": {
+				"url": "http://localhost:4000/api/vendors/kyc",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwMDgiLCJpYXQiOjE2Mzk2MDg5MzcsImV4cCI6MTYzOTYwOTA1N30.HA7ELjbZpdIAs1raiUFkvYsvCD8Kj_aI2ZBav9817dM"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "panNo",
+							"value": "BTJPC8243C",
+							"type": "text"
+						},
+						{
+							"key": "gstNo",
+							"value": "340706618307",
+							"type": "text"
+						},
+						{
+							"key": "pan",
+							"type": "file",
+							"src": "DynoHours.PNG",
+							"value": ""
+						},
+						{
+							"key": "gst",
+							"type": "file",
+							"src": "DynoHours.PNG",
+							"value": ""
+						},
+						{
+							"key": "kyc",
+							"type": "file",
+							"src": "DynoHoursExpired.PNG",
+							"value": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Multiple images in vendor",
+			"request": {
+				"url": "http://localhost:4000/api/vendors/updateshop",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwMDgiLCJpYXQiOjE2Mzk2MDg5MzcsImV4cCI6MTYzOTYwOTA1N30.HA7ELjbZpdIAs1raiUFkvYsvCD8Kj_aI2ZBav9817dM"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "shopName",
+							"value": "te",
+							"type": "text"
+						},
+						{
+							"key": "contactpersonName",
+							"value": "dfs",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "\"{\\n  \\\"no\\\": \\\"5-47-a\\\",\\n  \\\"street\\\": \\\"Arunodaya Colony\\\",\\n  \\\"city\\\": \\\"Hyderabad\\\",\\n  \\\"pincode\\\": 500081,\\n  \\\"state\\\": \\\"TG\\\",\\n  \\\"country\\\": \\\"India\\\",\\n  \\\"geometry\\\": {\\n    \\\"type\\\": \\\"Point\\\",\\n    \\\"coordinates\\\": [\\n      4.67878,\\n      5.6788\\n    ],\\n    \\\"index\\\": \\\"2dsphere\\\"\\n  }\\n}\"",
+							"type": "text"
+						},
+						{
+							"key": "delivery",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "Distance",
+							"value": "5000",
+							"type": "text"
+						},
+						{
+							"key": "shop",
+							"type": "file",
+							"src": "AWSERROR.PNG",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "shop",
+							"type": "file",
+							"src": "DynoHours.PNG",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "offers",
+							"type": "file",
+							"src": "AWSERROR.PNG",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "offers",
+							"type": "file",
+							"src": [],
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "QRCode",
+							"type": "file",
+							"src": "AWSERROR.PNG",
+							"value": ""
+						},
+						{
+							"key": "featuredImage",
+							"type": "file",
+							"src": "AWSERROR.PNG",
+							"value": ""
+						},
+						{
+							"key": "pincode",
+							"value": "500081",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vendor Details",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/getprofile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwMDYiLCJpYXQiOjE2MzYxMjM0MTMsImV4cCI6MTYzNjEyMzUzM30.2X0DTjI0o92giCXNrjM2N9Kk4rmwZwUxLVPq3gdBQGM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Wheather Phone Number Exists Already",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/verify",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":9640359075\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vendor Profile",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/getprofile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwMDYiLCJpYXQiOjE2Mzc0Mzg4ODIsImV4cCI6MTYzNzQzOTAwMn0.954e8q4yQ5NhEHo-3T0AaJHWV0NfGJzVSBDp04UwlDs"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor Signup",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/signupVendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"shopName\":\"Shop 1\",\r\n\t\"contactpersonName\":\"contct 1\",\r\n\t\"phoneNumber\":1231231234,\r\n\t\"ReEnterphoneNumber\":1231231234,\r\n\t\"Password\":\"windows@98\",\r\n\t\"ReEnterpassword\":\"windows@98\",\r\n\t\"acceptTermsNConditions\":true,\r\n\t\"pincode\":500081,\r\n\t\"employeeMobile\":7989367371,\r\n    \"fcmToken\":\"fcmtoken\",\r\n\t\"Category\":[\r\n        {\r\n            \"_id\": \"61ffbe4506118f330432ed3f\",\r\n            \"id\": 1,\r\n            \"fee\": 20,\r\n            \"gst\": 10,\r\n            \"name\": \"Category 1\",\r\n            \"status\": 1,\r\n            \"__v\": 0,\r\n            \"membership\": {\r\n                \"id\": 2,\r\n                \"name\": \"Silver\",\r\n                \"value\": 45\r\n            }\r\n        }\r\n    ]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Multiple images in vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updateshop",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "shopName",
+							"value": "te",
+							"type": "text"
+						},
+						{
+							"key": "contactpersonName",
+							"value": "dfs",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "\"{\\n  \\\"no\\\": \\\"5-47-a\\\",\\n  \\\"street\\\": \\\"Arunodaya Colony\\\",\\n  \\\"city\\\": \\\"Hyderabad\\\",\\n  \\\"pincode\\\": 500081,\\n  \\\"state\\\": \\\"TG\\\",\\n  \\\"country\\\": \\\"India\\\",\\n  \\\"geometry\\\": {\\n    \\\"type\\\": \\\"Point\\\",\\n    \\\"coordinates\\\": [\\n      4.67878,\\n      5.6788\\n    ],\\n    \\\"index\\\": \\\"2dsphere\\\"\\n  }\\n}\"",
+							"type": "text"
+						},
+						{
+							"key": "delivery",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "Distance",
+							"value": "5000",
+							"type": "text"
+						},
+						{
+							"key": "shop",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "shop",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "offers",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "offers",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "QRCode",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "featuredImage",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "pincode",
+							"value": "500081",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "V000000001",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor FAQ",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/faq",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Contact US Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/contactus",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Murthy\",\n\t\"email\":\"murthiich95@gmail.com\",\n\t\"mobile\":\"9640359075\",\n\t\"message\":\"HI HOW ARE YOU\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ValidateReferralID",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/validateReferralID",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " { \"ReferralId\":\"V000000001\" \n}"
+				},
+				"description": "Validate Referral ID using ID:\n{\n\"ReferralId\":\"V000000001\"\n}\nValidate ReferralID using phoneNumber\n{\n\"phoneNumber\":9640359076\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Refer Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/refervendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"referredBy\":\"A000000001\",\r\n\t\"shopName\":\"Shop 1\",\r\n\t\"dealerName\":\"contct 1\",\r\n\t\"phoneNumber\":9550283011,\r\n\t\"Address\":{\r\n\t\t\"city\":\"Hyderabad\",\r\n\t\t\"state\":\"TS\",\r\n\t\t\"pincode\":500081\r\n\t},\r\n\t\"Category\": [\r\n\t\t\t{\r\n\t\t\t\t\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\r\n\t\t\t\t\"name\":\"Category 1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\r\n\t\t\t\t\"name\":\"Category 2\"\r\n\t\t\t}\r\n\t\t]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List All Associates With Pincode Filder",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/listassociates",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"pincode\":[500082, 500081]\n}"
+				},
+				"description": "If there is only one pincode also send it as an array"
+			},
+			"response": []
+		},
+		{
+			"name": "Send Marketing Messages",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/sendmarketingmessage",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"vendorusername\":\"V000000001\",\n\t\"pincode\":500081,\n\t\"subject\":\"Broadcast 5\",\n\t\"message\":\"New Offer at store\",\n\t\"status\":\"Pending\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Marketing Messages Report",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/marketingmessagereport",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"vendorusername\":\"V000000002\",\n\t\"pincode\":500081\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor Dashboard",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/vendordashboard",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"vendor\":\"V000000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://en-rich.herokuapp.com/api/vendors/listallmarketingmessages",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/listallmarketingmessages",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor SalesSummary Report",
+			"request": {
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/vendors/salesSummary?username=V000000001&from=01-12-2021&to=02-12-2021",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vendors",
+						"salesSummary"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "V000000001"
+						},
+						{
+							"key": "from",
+							"value": "01-12-2021"
+						},
+						{
+							"key": "to",
+							"value": "02-12-2021"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor Transaction Report",
+			"request": {
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/vendors/transactionreport?username=V000000001&from=02-12-2021&to=03-12-2021",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vendors",
+						"transactionreport"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "V000000001"
+						},
+						{
+							"key": "from",
+							"value": "02-12-2021"
+						},
+						{
+							"key": "to",
+							"value": "03-12-2021"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Marketing Message Approval",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/marketingmessageapproval",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":2,\n    \"status\":0\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Multiple images in vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/updateshop",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwNTMiLCJpYXQiOjE2NDcyODI3OTcsImV4cCI6MTY0NzI4MjkxN30.U6-kGauuTXk_Wd3NPerJGX4pkI4wJwV7HQguXWRZxUg"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "area.id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "area.name",
+							"value": "Chennai",
+							"type": "text"
+						},
+						{
+							"key": "Address.no",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "Address.street",
+							"value": "Street1",
+							"type": "text"
+						},
+						{
+							"key": "Address.city",
+							"value": "Hyd",
+							"type": "text"
+						},
+						{
+							"key": "Address.pincode",
+							"value": "500082",
+							"type": "text"
+						},
+						{
+							"key": "Address.state",
+							"value": "TN",
+							"type": "text"
+						},
+						{
+							"key": "offers",
+							"type": "file",
+							"src": [],
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "offers",
+							"type": "file",
+							"src": [],
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "QRCode",
+							"type": "file",
+							"src": [],
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "featuredImage",
+							"type": "file",
+							"src": "AWSERROR.PNG",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": "500081",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Multiple images in vendor Working One Latest",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/updateshop",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwNTUiLCJpYXQiOjE2NDc0OTAwNjcsImV4cCI6MTY0NzQ5MDE4N30.NP8V0ujprAK4oDMc7ytPvTILL-ONPakLiTq6lldXH_Q"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "area.id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "area.name",
+							"value": "Chennai",
+							"type": "text"
+						},
+						{
+							"key": "Address.no",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "Address.street",
+							"value": "Street1",
+							"type": "text"
+						},
+						{
+							"key": "Address.city",
+							"value": "Hyd",
+							"type": "text"
+						},
+						{
+							"key": "Address.pincode",
+							"value": "500082",
+							"type": "text"
+						},
+						{
+							"key": "Address.state",
+							"value": "TN",
+							"type": "text"
+						},
+						{
+							"key": "Address.country",
+							"value": "India",
+							"type": "text"
+						},
+						{
+							"key": "Address.geometry.coordinate1",
+							"value": "13.116107",
+							"type": "text"
+						},
+						{
+							"key": "Address.geometry.type",
+							"value": "Point"
+						},
+						{
+							"key": "Address.geometry.index",
+							"value": "2dsphere",
+							"type": "text"
+						},
+						{
+							"key": "Address.geometry.coordinate2",
+							"value": "83.46125",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send Notifications Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/sendnotificatons",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"V000000053\",\n    \"notificationbody\":\"Hi User, This is your Notification\",\n    \"notificationtitle\":\"Title of this notification\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Read Notifications Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/readnotificatons",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Notifications Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/allnotificatons",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"V000000055\",\n     \"isRead\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Refer Vendor List",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/listReferVendors",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"shopName\":\"Shop 1\",\r\n\t\"dealerName\":\"contct 1\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get FAQ",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/fetchFaq",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delet and add shop images",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/updateshop",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDE2NDMiLCJpYXQiOjE2NTcyNjQxMzYsImV4cCI6MTY1NzI2NDI1Nn0.V7fC8SU4NGdxb2Bo-izAofOpmYy4wunnALYbGSHNCYI",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "shop",
+							"value": "",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "deleteshopImages",
+							"value": "[\"https://enn-richh.s3.ap-south-1.amazonaws.com/AWSERROR.PNG\"]",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Image In Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/uploadimage",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlYwMDAwMDAwMDgiLCJpYXQiOjE2Mzk2MDg5MzcsImV4cCI6MTYzOTYwOTA1N30.HA7ELjbZpdIAs1raiUFkvYsvCD8Kj_aI2ZBav9817dM",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "DynoHours.PNG",
+							"value": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

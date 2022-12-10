@@ -1,0 +1,77 @@
+GET http://localhost:3000/api/auth
+
+###
+POST http://localhost:3000/api/auth
+Content-Type: application/json
+
+{
+    "email": "sid7@gmail.com",
+    "password": "12345678",
+    "name": "sidhanth"
+}
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "sid5@gmail.com",
+    "password": "12345678"
+}
+
+###
+POST https://wesource-app.herokuapp.com/api/auth
+Content-Type: application/json
+
+{
+    "email": "sid10@gmail.com",
+    "password": "12345678",
+    "name": "sidhanth"
+}
+
+###
+POST https://wesource-app.herokuapp.com/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "sid10@gmail.com",
+    "password": "12345678"
+}
+
+###
+POST http://localhost:3000/api/auth/oauth/access_token
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJSUzI1NiIsImtpZCI6IjhiMjFkNWE1Y2U2OGM1MjNlZTc0MzI5YjQ3ZDg0NGE3YmZjODRjZmYiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiZGhydXYiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2Vzb3VyY2UtOGI2OWUiLCJhdWQiOiJ3ZXNvdXJjZS04YjY5ZSIsImF1dGhfdGltZSI6MTYyNTQ2MjQ4NSwidXNlcl9pZCI6InNJZjREbmFNZ0NhVUptQWt6c0xZUUZrem04NDMiLCJzdWIiOiJzSWY0RG5hTWdDYVVKbUFrenNMWVFGa3ptODQzIiwiaWF0IjoxNjI1NDYyNDg1LCJleHAiOjE2MjU0NjYwODUsImVtYWlsIjoiZGhydXZAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV9udW1iZXIiOiIrOTE5OTcyMzE2MzIxIiwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJwaG9uZSI6WyIrOTE5OTcyMzE2MzIxIl0sImVtYWlsIjpbImRocnV2QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBob25lIn19.lq4JcTM-4ytOWxY7IaVYvRgGerzdMekUTNOo8yFy3NG_kajmuLKiLVMCFbCSMtXXUZlNK6MQRlKSDUel4zi6Yh7wE2qc7k29pzqHDbAJRppuAYPgxI_8WUHSqcpddg9D9ftCO3kSNrniD_yEMEAgBqIge41uj-C2wCFoAfdhQ4egsUGiMG8YjUNS9Sflt_HPUit8Pc9poE2z_6XDjJNxl0kQz2gM3hQuhV4LbYbfISYs4JeMDb7fjWO5-q4SFGbJtb9CPvzPwwXUAc49R891JJKVOBzb0qx9p5nhdEUG2ChylU7m9B1ukajs6n_1_x_8RGxrIujeU7AwzttLMN6ZZg
+
+{
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhiMjFkNWE1Y2U2OGM1MjNlZTc0MzI5YjQ3ZDg0NGE3YmZjODRjZmYiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiZGhydXYiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2Vzb3VyY2UtOGI2OWUiLCJhdWQiOiJ3ZXNvdXJjZS04YjY5ZSIsImF1dGhfdGltZSI6MTYyNTQ2MjQ4NSwidXNlcl9pZCI6InNJZjREbmFNZ0NhVUptQWt6c0xZUUZrem04NDMiLCJzdWIiOiJzSWY0RG5hTWdDYVVKbUFrenNMWVFGa3ptODQzIiwiaWF0IjoxNjI1NDYyNDg1LCJleHAiOjE2MjU0NjYwODUsImVtYWlsIjoiZGhydXZAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV9udW1iZXIiOiIrOTE5OTcyMzE2MzIxIiwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJwaG9uZSI6WyIrOTE5OTcyMzE2MzIxIl0sImVtYWlsIjpbImRocnV2QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBob25lIn19.lq4JcTM-4ytOWxY7IaVYvRgGerzdMekUTNOo8yFy3NG_kajmuLKiLVMCFbCSMtXXUZlNK6MQRlKSDUel4zi6Yh7wE2qc7k29pzqHDbAJRppuAYPgxI_8WUHSqcpddg9D9ftCO3kSNrniD_yEMEAgBqIge41uj-C2wCFoAfdhQ4egsUGiMG8YjUNS9Sflt_HPUit8Pc9poE2z_6XDjJNxl0kQz2gM3hQuhV4LbYbfISYs4JeMDb7fjWO5-q4SFGbJtb9CPvzPwwXUAc49R891JJKVOBzb0qx9p5nhdEUG2ChylU7m9B1ukajs6n_1_x_8RGxrIujeU7AwzttLMN6ZZg"
+}
+
+###
+POST https://wesource-app.herokuapp.com/api/auth/oauth/access_token
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJSUzI1NiIsImtpZCI6IjhiMjFkNWE1Y2U2OGM1MjNlZTc0MzI5YjQ3ZDg0NGE3YmZjODRjZmYiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiZGhydXYiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2Vzb3VyY2UtOGI2OWUiLCJhdWQiOiJ3ZXNvdXJjZS04YjY5ZSIsImF1dGhfdGltZSI6MTYyNTQ2MjQ4NSwidXNlcl9pZCI6InNJZjREbmFNZ0NhVUptQWt6c0xZUUZrem04NDMiLCJzdWIiOiJzSWY0RG5hTWdDYVVKbUFrenNMWVFGa3ptODQzIiwiaWF0IjoxNjI1NDYyNDg1LCJleHAiOjE2MjU0NjYwODUsImVtYWlsIjoiZGhydXZAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV9udW1iZXIiOiIrOTE5OTcyMzE2MzIxIiwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJwaG9uZSI6WyIrOTE5OTcyMzE2MzIxIl0sImVtYWlsIjpbImRocnV2QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBob25lIn19.lq4JcTM-4ytOWxY7IaVYvRgGerzdMekUTNOo8yFy3NG_kajmuLKiLVMCFbCSMtXXUZlNK6MQRlKSDUel4zi6Yh7wE2qc7k29pzqHDbAJRppuAYPgxI_8WUHSqcpddg9D9ftCO3kSNrniD_yEMEAgBqIge41uj-C2wCFoAfdhQ4egsUGiMG8YjUNS9Sflt_HPUit8Pc9poE2z_6XDjJNxl0kQz2gM3hQuhV4LbYbfISYs4JeMDb7fjWO5-q4SFGbJtb9CPvzPwwXUAc49R891JJKVOBzb0qx9p5nhdEUG2ChylU7m9B1ukajs6n_1_x_8RGxrIujeU7AwzttLMN6ZZg
+
+###
+GET http://localhost:3000/api/users/active-count
+Content-Type: application/json
+
+{
+    "parentUserName": "A000000001"
+}
+
+###
+GET http://localhost:3000/api/users/earned-points
+Content-Type: application/json
+
+{
+    "parentUserName": "A000000001"
+}
+
+###
+GET http://localhost:3000/api/users/earned-points-level
+Content-Type: application/json
+
+{
+    "parentUserName": "A000000001"
+}

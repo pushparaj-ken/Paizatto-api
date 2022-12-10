@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "En-rich Cashbacks",
+		"_postman_id": "ba3ffd60-57f5-cb67-4b4a-c52fda59c715",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserCheckNetwork",
+			"request": {
+				"url": "http://localhost:4000/api/admins/UserCheckNetwork",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"AssociateUsername\":\"A000000002\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Points",
+			"request": {
+				"url": "http://localhost:4000/api/admins/InsertPoints",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"TransactionAmount\":4400,\n\t\"AssociateUsername\":\"A000000001\",\n\t\"MerchantUsername\": \"V000000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CashbackCall",
+			"request": {
+				"url": "http://localhost:4000/api/admins/CashbackCall",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"TransactionAmount\":4400,\n\t\"AssociateUsername\":\"A000000001\",\n\t\"MerchantUsername\": \"V000000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send Cashback",
+			"request": {
+				"url": "http://localhost:4000/api/admins/SendCashback",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"TransactionAmount\":4400,\n\t\"AssociateUsername\":\"A000000001\",\n\t\"MerchantUsername\": \"V000000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

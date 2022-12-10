@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "43152f3c-4e5f-4743-bcbe-8768a30378fa",
+		"name": "En-rich",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://en-rich.herokuapp.com/api/reports/downlinePoints",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"A000000001\",\r\n    \"fromDate\": \"\",\r\n    \"toDate\": \"\",\r\n    \"associateId\": \"\",\r\n    \"level\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/reports/downlinePoints",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reports",
+						"downlinePoints"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://en-rich.herokuapp.com/api/reports/referral",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"A000000001\",\r\n    \"mobileNumber\": \"\",\r\n    \"status\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/reports/referral",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reports",
+						"referral"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://en-rich.herokuapp.com/api/reports/level",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"A000000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/reports/level",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reports",
+						"level"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://en-rich.herokuapp.com/api/reports/purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"A000000001\",\r\n    \"fromDate\": \"\",\r\n    \"toDate\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/reports/purchase",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"reports",
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
