@@ -1,0 +1,388 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Areas",
+		"_postman_id": "82f635ad-5a2d-8fad-a6ee-b3ec510c7710",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Areas",
+			"request": {
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/admin/area?status=0",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"admin",
+						"area"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Area",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/area",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Madhapur 3\",\n\t\"orderBy\":2,\n\t\"districtid\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updatearea",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/area/updatearea",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"status\":1,\n\t\"id\":1,\n\t\"name\":\"Adambakkam\",\n\t\"districtid\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deletearea",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/area/deletearea",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":175\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add District",
+			"request": {
+				"url": "http://localhost:4000/api/admin/district",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Madhapur 3\",\n\t\"orderBy\":1,\n\t\"districtid\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Districts",
+			"request": {
+				"url": {
+					"raw": "http://localhost:4000/api/admin/district?status=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"admin",
+						"district"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update District",
+			"request": {
+				"url": "http://localhost:4000/api/admin/district/updatedistrict",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"status\":1,\n\t\"id\":1,\n\t\"name\":\"Adambakkam\",\n\t\"districtid\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete District",
+			"request": {
+				"url": "http://localhost:4000/api/admin/district/deletedistrict",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Areas In A District",
+			"request": {
+				"url": {
+					"raw": "http://localhost:4000/api/admin/area?districtid=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"admin",
+						"area"
+					],
+					"query": [
+						{
+							"key": "districtid",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pincodes",
+			"request": {
+				"url": {
+					"raw": "http://localhost:4000/api/admin/pincode?status=0&id=1&pincode=500082",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"admin",
+						"pincode"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "500082",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Pincode",
+			"request": {
+				"url": "http://localhost:4000/api/admin/pincode",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"pincode\":500082,\n\t\"cityname\": \"Hyderabad\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update Pincode",
+			"request": {
+				"url": "http://localhost:4000/api/admin/pincode/updatepincode",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"pincode\":500080,\n\t\"cityname\": \"Bangalore\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pincode",
+			"request": {
+				"url": "http://localhost:4000/api/admin/pincode/deletepincode",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "OTP Login Associate",
+			"request": {
+				"url": "http://localhost:4000/api/users/otplogin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\": 9840310124\n}"
+				},
+				"description": "\"username\":\"A00000001\",\n\"phoneNumber\":9640359075"
+			},
+			"response": []
+		}
+	]
+}

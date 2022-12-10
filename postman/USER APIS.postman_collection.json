@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "470e7709-7627-49b5-947e-7fe35dc6a2c5",
+		"name": "USER APIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/admins/loginuser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"phoneNumber\":9640359011,\n    \"password\":\"123\"\n}"
+				},
+				"url": "http://paizatto.herokuapp.com/api/admins/loginuser"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/adduser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\":\"Murthy\",\n    \"lastName\":\"murthii11\",\n    \"phoneNumber\":9640359021,\n    \"password\":\"123\",\n    \"roleid\":\"1\",\n    \"rolename\":\"Role 1\",\n    \"employee\":[9640359075,9963420605]\n}"
+				},
+				"url": "http://paizatto.herokuapp.com/api/admins/adduser"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/getuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Murthy\",\r\n    \"phoneNumber\":9640359077,\r\n    \"username\":\"murthii11\",\r\n    \"password\":\"123\",\r\n    \"roleid\":\"12\",\r\n    \"id\":1\r\n}"
+				},
+				"url": "http://paizatto.herokuapp.com/api/admins/getuser"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/updateuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"111\",\r\n    \"phoneNumber\":9640359077,\r\n    \"username\":\"111\",\r\n    \"password\":\"111\",\r\n    \"roleid\":\"11\",\r\n    \"id\":1\r\n}"
+				},
+				"url": "http://paizatto.herokuapp.com/api/admins/updateuser"
+			},
+			"response": []
+		}
+	]
+}

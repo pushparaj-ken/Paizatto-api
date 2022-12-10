@@ -1,0 +1,235 @@
+{
+	"variables": [],
+	"info": {
+		"name": "En-rich Reports",
+		"_postman_id": "bd633d03-23bf-869a-93fd-7a02b753d859",
+		"description": "{\n\t\"status\": 0,\n\t \"username\": \"A000000002\",\n\t \"transactionDate\":\"2021-11\"\n}",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cashback Report",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/reports/cashback",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"status\": 1,\n\t \"username\": \"A000000044\",\n\t \t\"from\":\"01/12/2021\",\n\t\"to\":\"31/12/2022\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "reports/active-inactive",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/reports/active-inactive",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"A000000002\"\n}"
+				},
+				"description": "To retrieve all users data pass emty body, otherwise pass username"
+			},
+			"response": []
+		},
+		{
+			"name": "downlinepoints",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/reports/downlinepoints",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"from\":\"01/12/2021\",\n\t\"to\":\"31/12/2022\",\n\t\"username\":\"A000000033\",\n\t\"associate\":\"A000000009\",\n\t\"associateLevel\": \"Level- 1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Referral Report",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/reports/referralreport",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"OL00000001\",\n    \"status\":1,\n    \"from\":\"10/01/2022\",\n\t\"to\":\"13/01/2022\"\n}"
+				},
+				"description": "status : 0 - new user, 1 - activated"
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase Report",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/reports/purchasereport",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"A000000008\",\n    \"shopType\":\"Diamond\",\n    \"from\":\"02/12/2021\",\n    \"to\":\"03/12/2022\",\n    \"status\":0\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Dashboard",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/dashboard",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"A000000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Level Report",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/reports/levelreport",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"A000000002\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor SalesSummary Report",
+			"request": {
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/vendors/salesSummary?username=V000000001&from=01-12-2021&to=02-12-2021",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vendors",
+						"salesSummary"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "V000000001"
+						},
+						{
+							"key": "from",
+							"value": "01-12-2021"
+						},
+						{
+							"key": "to",
+							"value": "02-12-2021"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor Transaction Report",
+			"request": {
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/vendors/transactionreport?username=V000000001&from=02-12-2021&to=03-12-2021",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"vendors",
+						"transactionreport"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "V000000001"
+						},
+						{
+							"key": "from",
+							"value": "02-12-2021"
+						},
+						{
+							"key": "to",
+							"value": "03-12-2021"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor Dashboard",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/vendors/vendordashboard",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

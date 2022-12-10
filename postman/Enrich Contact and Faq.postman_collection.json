@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "7a026a0b-8fce-4ea2-9b03-dac82dfc821b",
+		"name": "Enrich Contact and Faq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "contact create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"guhan\",\r\n    \"email\":\"guhanb1308@gmail.com\",\r\n    \"mobile\":\"123456789\",\r\n    \"message\":\"contact demo\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vendors/contactus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vendors",
+						"contactus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatFaq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\":\"demoquestion3\",\r\n    \"answer\":\"demoanswer3\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vendors/createFaq",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vendors",
+						"createFaq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchContact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/vendors/fetchContactUs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vendors",
+						"fetchContactUs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchFaq",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/vendors/fetchFaq",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vendors",
+						"fetchFaq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateContact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"61ef88001b7e0c3820d98cae\",\r\n    \"name\":\"guhan b\",\r\n    \"email\":\"guhan@gmail.com\",\r\n    \"mobile\":\"12345\",\r\n    \"message\":\"updateed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vendors/updateContact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vendors",
+						"updateContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateFaq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"61ef89211b7e0c3820d98cb3\",\r\n    \"question\":\"question updated\",\r\n    \"answer\":\"answer updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vendors/updateFaq",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vendors",
+						"updateFaq"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

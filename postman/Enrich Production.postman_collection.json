@@ -1,0 +1,3303 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Enrich Production",
+		"_postman_id": "54473c8f-e877-a375-bdb0-a83b5578adde",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Associate Profile",
+			"request": {
+				"url": "en-rich.herokuapp.com/api/users/getprofile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTQiLCJpYXQiOjE2MzUzMzk2MjAsImV4cCI6MTYzNTMzOTc0MH0.0yEZdYwBumf8Y7B-IDChVpMQDXoAG14Yl3R4FtdA1C0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get Associate Profile"
+			},
+			"response": [
+				{
+					"id": "66c28fcf-9c78-497e-a0c8-4ac0310f36e7",
+					"name": "Get Associate Profile Success Response",
+					"originalRequest": {
+						"url": "en-rich.herokuapp.com/api/users/getprofile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"warning": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzMzkzMTIsImV4cCI6MTYzNTMzOTQzMn0.iRBGhP5MccoVl0xQbPpNbgsY_nHf4IPCXUVRz7M0Zyk",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "1336",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 12:58:19 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"538-VIKkvC+wMirjnF+9H8JM+cjepN8\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"success\":true,\"message\":\"User Data Retrieved.\",\"Data\":{\"_id\":\"61794c30732cf50016dff5b5\",\"referrer\":{\"referraluid\":\"OL00000001\",\"referralid\":\"OL00000001\",\"referralusername\":\"OL00000001\",\"referralName\":\"Company ReferralCompany Network\"},\"Address\":{\"no\":\"\",\"street\":\"\",\"city\":\"\",\"pincode\":500081,\"state\":\"\",\"country\":\"\",\"lat\":null,\"long\":null},\"UPI\":[],\"Bank\":{\"accountholdername\":\"\",\"accountnumber\":\"\",\"ifsccode\":\"\",\"bankname\":\"\",\"branchname\":\"\"},\"dashboard\":{\"currentLevel\":\"\",\"poitntsEarned\":\"\",\"pointsEligible\":\"\"},\"uid\":\"20193e84-70ee-4494-bb91-d1002852d36d\",\"username\":\"A000000013\",\"phoneNumber\":7893323459,\"firstName\":\"Murthy\",\"lastName\":\"CH\",\"DOB\":\"01/01/1970\",\"email\":\"\",\"Password\":\"b3b4992805777f9e2948d76ee6c8745943a9efb15589145871ba97b45a1b6407ad8ba0bc3b70942e4638536ba628cadb7852ead035116fdd065595a5d6e7836c\",\"LastPassword\":[],\"Gender\":\"\",\"isPhone\":false,\"fcmToken\":\"\",\"status\":false,\"createdAt\":\"2021-10-27T12:55:12.363Z\",\"lastModifiedAt\":\"2021-10-27T12:55:12.363Z\",\"lastModifiedBy\":\"\",\"PasswordSalt\":\"l9lad7gb5c2fah9mf7\",\"otp\":\"\",\"deeplink\":\"https://en-rich.herokuapp.com/?referralid=A000000013\",\"panNo\":\"\",\"aadharNo\":\"\",\"panPath\":\"\",\"aadharPath\":\"\",\"isVerifyUPI\":false,\"isBank\":false,\"isPersonal\":false,\"parentId\":\"\",\"createdBy\":\"Node API Hardcoded\",\"Levels\":[],\"__v\":0},\"timestamp\":\"2021-10-27T12:58:19.645Z\"}"
+				}
+			]
+		},
+		{
+			"name": "Login Associate",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"A000000013\",\n\t\"Password\":\"windows@98\"\n}"
+				},
+				"description": "\"username\":\"A00000001\",\n\"phoneNumber\":9640359075"
+			},
+			"response": [
+				{
+					"id": "77f2a514-fbbe-462b-b108-c272008b082d",
+					"name": "Phone Number or Username Doesn't Exist",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"A00000013\",\n\t\"Password\":\"windows@99\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "118",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:31:50 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"76-7LDigbip2s5ewGnyUwoDuDZ828o\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":false,\"code\":201,\"Status\":\"Phone Number or Username Doesn't Exist.\",\"timestamp\":\"2021-10-27T13:31:50.069Z\"}"
+				},
+				{
+					"id": "0e8e0df5-8e84-418b-89ad-2ed8b545219b",
+					"name": "Login Associate Incorrect Password",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"A000000013\",\n\t\"Password\":\"windows@98\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "99",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:30:51 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"63-/b4qoEJqfz2cnK6rv44/wRWnLZo\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"message\":\"Incorrect Password.\",\"timestamp\":\"2021-10-27T13:30:51.865Z\"}"
+				},
+				{
+					"id": "ec1f3468-2d8f-4643-9b3d-418ee0f07b65",
+					"name": "Login Associate Success",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"A000000013\",\n\t\"Password\":\"windows@99\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "484",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:31:24 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1e4-irrl/ilv7Nb6XaB5ClrcdWoD5XA\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":true,\"code\":200,\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzNDE0ODQsImV4cCI6MTYzNTM0MTYwNH0.R-FXA9lcG5EPAdBbz2prK82J0_lzPi_mgM43z1wctN4\",\"refreshToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzNDE0ODQsImV4cCI6MTYzNTQyNzg4NH0.FASqift7qU0zBufi5HmPhhSQwJG47LkPVhV2yZzw1U0\",\"Data\":{\"username\":\"A000000013\",\"isVerifyUPI\":false,\"isBank\":false,\"isPersonal\":false,\"status\":false}}"
+				},
+				{
+					"id": "3d6abc57-6cb3-4bcd-91d2-b09417164797",
+					"name": "Login Associate using Phone Number",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phoneNumber\":7893323459,\n\t\"Password\":\"windows@99\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "484",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:32:36 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1e4-Z7Twtbol5iCV4SG6SckQ1f0HEV0\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":true,\"code\":200,\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzNDE1NTYsImV4cCI6MTYzNTM0MTY3Nn0.wqgXUTyQZlvZY2hFrhnX727ElbXm-kr8NNcBvtaPxcY\",\"refreshToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzNDE1NTYsImV4cCI6MTYzNTQyNzk1Nn0.5sV6Vbnlk1ZkLQt_J_7z2Av--xgVeRt7a4dC8pPyPcM\",\"Data\":{\"username\":\"A000000013\",\"isVerifyUPI\":false,\"isBank\":false,\"isPersonal\":false,\"status\":false}}"
+				}
+			]
+		},
+		{
+			"name": "OTP Login Associate",
+			"request": {
+				"url": "http://localhost:4000/api/users/otplogin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\": 9840310124\n}"
+				},
+				"description": "\"username\":\"A00000001\",\n\"phoneNumber\":9640359075"
+			},
+			"response": []
+		},
+		{
+			"name": "Send OTP",
+			"request": {
+				"url": "en-rich.herokuapp.com/api/users/sendOTP",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTQiLCJpYXQiOjE2MzUzMzk2MjAsImV4cCI6MTYzNTMzOTc0MH0.0yEZdYwBumf8Y7B-IDChVpMQDXoAG14Yl3R4FtdA1C0",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get Associate Profile"
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Wheather Phone Number Exists Already",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/verify",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":9640359075\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "67f9e30a-3cd5-454b-a0c5-c75280bf0f65",
+					"name": "Phone Number Doesn't Exists",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/verify",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phoneNumber\":7207390282\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "106",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:33:35 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"6a-CKL7h+L3Wwd/7qoRdtgtmGkyWmo\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":false,\"code\":201,\"Status\":\"Phone Number Doesn't Exist.\",\"timestamp\":\"2021-10-27T13:33:35.360Z\"}"
+				},
+				{
+					"id": "440cc61c-bb2a-4cad-9c23-c0ea1de1d01b",
+					"name": "Phone Number Exists Already",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/verify",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phoneNumber\":9640359075\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "124",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:33:12 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"7c-DzFYc0fI9D0kNvd0+UCHathRgwY\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":true,\"code\":200,\"Status\":\"Phone Number Exists Already with + .A000000001\",\"timestamp\":\"2021-10-27T13:33:12.119Z\"}"
+				}
+			]
+		},
+		{
+			"name": "Register Associate",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Murthy\",\n\t\"lastName\":\"CH\",\n\t\"phoneNumber\":9640359078,\n\t\"ReEnterphoneNumber\":9640359078,\n\t\"Password\":\"windows@99\",\n\t\"ReEnterpassword\":\"windows@99\",\n\t\"pincode\":500081,\n\t\"acceptTermsNConditions\":true,\n\t\"ReferralId\":\"\"\n}"
+				},
+				"description": "register associate api"
+			},
+			"response": [
+				{
+					"id": "3e91d2ac-5e42-487e-af3d-86f3954cc0ee",
+					"name": "Terms and Conditions Not Accepted",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Murthy\",\n\t\"lastName\":\"CH\",\n\t\"phoneNumber\":9640359088,\n\t\"ReEnterphoneNumber\":9640359088,\n\t\"Password\":\"windows@98\",\n\t\"ReEnterpassword\":\"windows@98\",\n\t\"pincode\":500081,\n\t\"acceptTermsNConditions\":false,\n\t\"ReferralId\":\"\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "114",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 12:51:45 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"72-ZrktT+j1CQUMrLLPzzWjEIKJBfc\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"message\":\"Terms and Conditions Not Accepted.\",\"timestamp\":\"2021-10-27T12:51:45.661Z\"}"
+				},
+				{
+					"id": "0e993532-2937-4303-93c9-c4a3d9dca8d8",
+					"name": "Enter and Renter Password's Mismatch",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Murthy\",\n\t\"lastName\":\"CH\",\n\t\"phoneNumber\":9640359088,\n\t\"ReEnterphoneNumber\":9640359088,\n\t\"Password\":\"windows@99\",\n\t\"ReEnterpassword\":\"windows@98\",\n\t\"pincode\":500081,\n\t\"acceptTermsNConditions\":true,\n\t\"ReferralId\":\"\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "98",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 12:50:10 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"62-w5ehUJ7hlteqg96vS0QbQUbCQG8\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"status\":\"Passwords Mismatch.\",\"timestamp\":\"2021-10-27T12:50:10.924Z\"}"
+				},
+				{
+					"id": "8a08bd03-a357-4291-94a9-49df59ff8935",
+					"name": "Phone Number Exists Already",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Murthy\",\n\t\"lastName\":\"CH\",\n\t\"phoneNumber\":9640359078,\n\t\"ReEnterphoneNumber\":9640359078,\n\t\"Password\":\"windows@99\",\n\t\"ReEnterpassword\":\"windows@99\",\n\t\"pincode\":500081,\n\t\"acceptTermsNConditions\":true,\n\t\"ReferralId\":\"\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "107",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 12:41:19 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"6b-Ysc8EFiDaXJEfD+vMLarbvMeEaY\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"status\":\"Phone Number Exists Already.\",\"timestamp\":\"2021-10-27T12:41:19.697Z\"}"
+				},
+				{
+					"id": "f59957af-2a20-4851-8b02-df2873893e53",
+					"name": "Register Associate",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Murthy\",\n\t\"lastName\":\"CH\",\n\t\"phoneNumber\":7893323459,\n\t\"ReEnterphoneNumber\":7893323459,\n\t\"Password\":\"windows@99\",\n\t\"ReEnterpassword\":\"windows@99\",\n\t\"pincode\":500081,\n\t\"acceptTermsNConditions\":true,\n\t\"ReferralId\":\"\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "625",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 12:55:12 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"271-9YZ7rG8dD1HmD6amL81lPUT4vd8\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"success\":true,\"status\":\"Registered Successfully\",\"Data\":{\"uid\":\"20193e84-70ee-4494-bb91-d1002852d36d\",\"username\":\"A000000013\",\"firstName\":\"Murthy\",\"lastName\":\"CH\",\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzMzkzMTIsImV4cCI6MTYzNTMzOTQzMn0.iRBGhP5MccoVl0xQbPpNbgsY_nHf4IPCXUVRz7M0Zyk\",\"refreshToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzMzkzMTIsImV4cCI6MTYzNTQyNTcxMn0.mbNtf_YAX4_wEAQ47OrqJrNee_ODidkzv-7VixRImtg\",\"isVerifyUPI\":false,\"isBank\":false,\"isPersonal\":false},\"timestamp\":\"2021-10-27T12:55:12.372Z\"}"
+				}
+			]
+		},
+		{
+			"name": "PincodeAutoFill",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/getPincodeAutofill",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"pincode\":600006\n}"
+				},
+				"description": "Get Location Preferences API"
+			},
+			"response": [
+				{
+					"id": "5d19e8bf-704e-484e-8df1-8d98e15b360c",
+					"name": "PincodeAutoFill Success Response",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/getPincodeAutofill",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"pincode\":600006\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "941",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:34:12 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"3ad-MwIVd0s/8n3hgRvxggU2RW6Xbi8\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"predictions\":[{\"description\":\"Chennai, Tamil Nadu 600006, India\",\"matched_substrings\":[{\"length\":6,\"offset\":20}],\"place_id\":\"ChIJ_f4gC2pmUjoR98X3Jh65Gdk\",\"reference\":\"ChIJ_f4gC2pmUjoR98X3Jh65Gdk\",\"structured_formatting\":{\"main_text\":\"600006\",\"main_text_matched_substrings\":[{\"length\":6,\"offset\":0}],\"secondary_text\":\"Chennai, Tamil Nadu, India\"},\"terms\":[{\"offset\":0,\"value\":\"Chennai\"},{\"offset\":9,\"value\":\"Tamil Nadu\"},{\"offset\":20,\"value\":\"600006\"},{\"offset\":28,\"value\":\"India\"}],\"types\":[\"postal_code\",\"geocode\"]},{\"description\":\"Singapore 600006\",\"matched_substrings\":[{\"length\":6,\"offset\":10}],\"place_id\":\"ChIJfUwlSKQa2jERPtavr0nchyM\",\"reference\":\"ChIJfUwlSKQa2jERPtavr0nchyM\",\"structured_formatting\":{\"main_text\":\"600006\",\"main_text_matched_substrings\":[{\"length\":6,\"offset\":0}],\"secondary_text\":\"Singapore\"},\"terms\":[{\"offset\":10,\"value\":\"600006\"},{\"offset\":0,\"value\":\"Singapore\"}],\"types\":[\"postal_code\",\"geocode\"]}],\"status\":\"OK\"}"
+				},
+				{
+					"id": "8412843e-fb4a-4162-9bf7-a8381aa0d795",
+					"name": "PincodeAutoFill Zero Results",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/getPincodeAutofill",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"pincode\":521258\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "42",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:34:36 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"2a-3Av8arcYA8CtBhHJtJeSVMkxsiQ\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"predictions\":[],\"status\":\"ZERO_RESULTS\"}"
+				}
+			]
+		},
+		{
+			"name": "ValidateReferralID",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/validateReferralID",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " { \"ReferralId\":\"A000000001\" \n}"
+				},
+				"description": "Validate Referral ID using ID:\n{\n\"ReferralId\":\"A000000001\"\n}\nValidate ReferralID using phoneNumber\n{\n\"phoneNumber\":9640359076\n}"
+			},
+			"response": [
+				{
+					"id": "332b9956-46b0-4320-9e82-7a936e68f562",
+					"name": "No Such User Exists",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/validateReferralID",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"phoneNumber\":9640359076\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "100",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:36:56 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"64-7/Z9uMbcG80fTAeIasBq+7jWCsE\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"message\":\"No such user exists.\",\"timestamp\":\"2021-10-27T13:36:56.646Z\"}"
+				},
+				{
+					"id": "9b6ccdee-1a1e-42b8-a10b-023906d7247f",
+					"name": "Valid User",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/validateReferralID",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"phoneNumber\":9640359075\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "131",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:37:16 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"83-3gVTAJLkZVRtnL16V4WeumEyD58\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"success\":true,\"data\":{\"firstName\":\"Narayana Murthy\",\"lastName\":\"Chintakayala\"},\"timestamp\":\"2021-10-27T13:37:16.333Z\"}"
+				}
+			]
+		},
+		{
+			"name": "Get BankDetails Using IFSC",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/ifsc",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ifsccode\":\"SBIN0002750\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "814b9488-cada-4804-aeef-ec1713577314",
+					"name": "Invalid IFSC",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/ifsc",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"ifsccode\":\"SBIN000275\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "99",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:38:44 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"63-MOJgL93SROvrnB3wNSE6QUbkV6g\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"message\":\"Invalid IFSC Code..\",\"timestamp\":\"2021-10-27T13:38:44.460Z\"}"
+				},
+				{
+					"id": "fc1439ca-16d2-4c98-ac3c-18550cab0de3",
+					"name": "Valid IFSC",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/ifsc",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"ifsccode\":\"SBIN0002750\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "327",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:38:24 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"147-4yzuI0ji+ETKMjusXtWJmxB/UVo\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"MICR\":\"533002604\",\"BRANCH\":\"KOTANANDURU\",\"ADDRESS\":\"TUNI TALUQ, E G DISTT , A P 533407\",\"STATE\":\"ANDHRA PRADESH\",\"CONTACT\":\"\",\"UPI\":true,\"RTGS\":true,\"CITY\":\"KOTANANDURU\",\"CENTRE\":\"EAST GODAVARI\",\"DISTRICT\":\"EAST GODAVARI\",\"NEFT\":true,\"IMPS\":true,\"SWIFT\":\"\",\"BANK\":\"State Bank of India\",\"BANKCODE\":\"SBIN\",\"IFSC\":\"SBIN0002750\"}"
+				}
+			]
+		},
+		{
+			"name": "updatePassword",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/updatepassword",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDEiLCJpYXQiOjE2MzIxODE4ODgsImV4cCI6MTYzMjE4MjAwOH0.ORWwBhA5pj4jqWVbI2UcmnNcHqyE0nMN26J0Ayqk2ro"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"CurrentPassword\":\"windows@99\",\n\t\"NewPasword\":\"windows@98\"\n}"
+				},
+				"description": "UpdateAssociate Password"
+			},
+			"response": [
+				{
+					"id": "2a62c4e3-9c3b-4a09-97fe-8258519d0d1e",
+					"name": "Old and New Passwords are Same",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/updatepassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"warning": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDEiLCJpYXQiOjE2MzIxODE4ODgsImV4cCI6MTYzMjE4MjAwOH0.ORWwBhA5pj4jqWVbI2UcmnNcHqyE0nMN26J0Ayqk2ro",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"CurrentPassword\":\"windows@98\",\n\t\"NewPasword\":\"windows@98\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "120",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:40:10 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"78-ootPooNcfRM4PW3ZoM9HJgdMuMw\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"message\":\"Old and New Password should not be same.\",\"timestamp\":\"2021-10-27T13:40:10.884Z\"}"
+				},
+				{
+					"id": "9d4ac700-7cd7-4324-9220-ae3dd77c1795",
+					"name": "Password Update Success",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/updatepassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"warning": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDEiLCJpYXQiOjE2MzIxODE4ODgsImV4cCI6MTYzMjE4MjAwOH0.ORWwBhA5pj4jqWVbI2UcmnNcHqyE0nMN26J0Ayqk2ro",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"CurrentPassword\":\"windows@98\",\n\t\"NewPasword\":\"windows@99\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "103",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:40:39 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"67-AdqruXJeco0dx5G7iSl6uLc8DNg\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"success\":true,\"message\":\"Password Update Success.\",\"timestamp\":\"2021-10-27T13:40:39.367Z\"}"
+				},
+				{
+					"id": "104a0256-2446-4bc2-966f-1fe0aa78f39d",
+					"name": "Password Doesn't Match",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/updatepassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"warning": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDEiLCJpYXQiOjE2MzIxODE4ODgsImV4cCI6MTYzMjE4MjAwOH0.ORWwBhA5pj4jqWVbI2UcmnNcHqyE0nMN26J0Ayqk2ro",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"CurrentPassword\":\"windows@99\",\n\t\"NewPasword\":\"windows@98\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "103",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:39:42 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"67-XO/1q3AVFpzPnzIX6uFfZIYZIeQ\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"message\":\"Password Doesn't Match.\",\"timestamp\":\"2021-10-27T13:39:42.784Z\"}"
+				}
+			]
+		},
+		{
+			"name": "Update Associate Personal DEtails",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/profile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDEiLCJpYXQiOjE2MzIyNjk1MDUsImV4cCI6MTYzMjI2OTYyNX0.BYBtlVjGNWp6r2FXjTt7ZI_pB8u8TK9pODxV3LWkji4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\":\"Narayana Murthy\",\n\t\"lastName\":\"Chintakayala\",\n\t\"email\":\"murthiich95@gmail.com\",\n\t\"phoneNumber\":\"9640359076\",\n\t\"Gender\":\"Male\",\n\t\"DOB\":\"1996-12-24T18:30:00.000+00:00\",\n\t\"Address\":{\n\t\t\"no\":\"5-48\",\n\t\t\"street\":\"New Main\",\n\t\t\"pincode\":500081,\n\t\t\"state\":\"Telangana\",\n\t\t\"country\":\"India\",\n\t\t\"city\":\"Hyd\",\n\t\t\"lat\":\"\",\n\t\t\"long\":\"\"\n\t},\n\t\"fcmToken\":\"Test Toke\",\n\t\"UPI\":{\n\t\t\"gpay\":\"9640359075@okaxis\",\n\t\t\"phonepe\":\"\",\n\t\t\"paytm\":\"\",\n\t\t\"bhim\":\"\",\n\t\t\"gaxis\":\"9640359075@okaxis\",\n\t\t\"ghdfc\":\"\",\n\t\t\"gicici\":\"\",\n\t\t\"gsbi\":\"\",\n\t\t\"pyes\":\"\",\n\t\t\"picici\":\"\",\n\t\t\"paxis\":\"\"\n\t},\n\t\"username\":\"123\",\n\t\"Bank\":{\n\t\t\"accountholdername\":\"Narayana Murthy\",\n\t\t\"accountnumber\":\"32659927187\",\n\t\t\"ifsccode\":\"SBIN0002750\"\n\t},\n\t\"dashboard\":{\n\t\t\"currentLevel\":\"125\"\n\t}\n}"
+				},
+				"description": "Update Associate Personal DEtails"
+			},
+			"response": [
+				{
+					"id": "0b9e9486-c14b-41e9-8dfe-b51cd6eb632e",
+					"name": "Update Associate Success",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/profile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDEiLCJpYXQiOjE2MzIyNjk1MDUsImV4cCI6MTYzMjI2OTYyNX0.BYBtlVjGNWp6r2FXjTt7ZI_pB8u8TK9pODxV3LWkji4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\":\"Narayana Murthy\",\n\t\"lastName\":\"Chintakayala\",\n\t\"email\":\"murthiich95@gmail.com\",\n\t\"phoneNumber\":\"9640359076\",\n\t\"Gender\":\"Male\",\n\t\"DOB\":\"01/01/1970\",\n\t\"Address\":{\n\t\t\"no\":\"5-48\",\n\t\t\"street\":\"New Main\",\n\t\t\"pincode\":500081,\n\t\t\"state\":\"Telangana\",\n\t\t\"country\":\"India\",\n\t\t\"city\":\"Hyd\",\n\t\t\"lat\":\"\",\n\t\t\"long\":\"\"\n\t},\n\t\"fcmToken\":\"Test Toke\",\n\t\"UPI\":{\n\t\t\"gpay\":\"9640359075@okaxis\",\n\t\t\"phonepe\":\"\",\n\t\t\"paytm\":\"\",\n\t\t\"bhim\":\"\",\n\t\t\"gaxis\":\"9640359075@okaxis\",\n\t\t\"ghdfc\":\"\",\n\t\t\"gicici\":\"\",\n\t\t\"gsbi\":\"\",\n\t\t\"pyes\":\"\",\n\t\t\"picici\":\"\",\n\t\t\"paxis\":\"\"\n\t},\n\t\"username\":\"123\",\n\t\"Bank\":{\n\t\t\"accountholdername\":\"Narayana Murthy\",\n\t\t\"accountnumber\":\"32659927187\",\n\t\t\"ifsccode\":\"SBIN0002750\"\n\t},\n\t\"dashboard\":{\n\t\t\"currentLevel\":\"125\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "122",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:42:30 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"7a-bJK2rWGNNq/OeeHI6d55U87qX8w\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"success\":true,\"message\":\"Associate Personal Details Updated Success.\",\"timestamp\":\"2021-10-27T13:42:30.194Z\"}"
+				}
+			]
+		},
+		{
+			"name": "forgot Password",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/forgotPassword",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"\"\n}"
+				},
+				"description": "Get Location Preferences API"
+			},
+			"response": [
+				{
+					"id": "ff3e1760-d713-4c3e-805b-6056a08247d7",
+					"name": "Phone Number Required",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/forgotPassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phoneNumber\":\"\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "62",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:43:47 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"3e-MCICSX1pRs7qd2koovXuDrPzqDA\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":false,\"code\":201,\"Status\":\"Phone Number Required.\"}"
+				},
+				{
+					"id": "ddf532b4-a8d7-4f62-965b-1d726b1a21c1",
+					"name": "Password Sent Success",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/forgotPassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phoneNumber\":9640359075\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "61",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:44:27 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"3d-rBNAPCiawre5rypA7XB6BKsRwTU\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":true,\"code\":200,\"Status\":\"Password Sent Success.\"}"
+				}
+			]
+		},
+		{
+			"name": "Get All Vendors",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/getallvendors",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"pincode\":500082,\r\n\t\"city\":\"Chennai\",\r\n\t\"category\":\"1,2,3\", \r\n\t\"product\":\"ProductName1, ProductName2, ProductName3\",\r\n\t\"location\":{\r\n\t\t\"coordinate1\":17.11111,\r\n\t\t\"coordinate2\":79.811818,\r\n\t\t\"maxDistance\":10000\r\n\t},\r\n\t\"Membership\":2,\r\n\t\"shopName\":\"Parshwa Collections\",\r\n\t\"delivery\":true\r\n}"
+				},
+				"description": "Get All Vendors"
+			},
+			"response": [
+				{
+					"id": "df1dd4a1-4d47-435b-a06f-db412f30ddeb",
+					"name": "Get All Vendors",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/getallvendors",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "7090",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:45:07 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1bb2-crmUTItShnN76eiq+SB3GYY0sUo\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":true,\"code\":200,\"Status\":\"Vendor Data Retrieved Success.\",\"Data\":[{\"_id\":\"614a74c1b9acc50016439532\",\"Address\":{\"no\":\"5-48\",\"street\":\"New Main\",\"pincode\":500081,\"state\":\"Telangana\",\"country\":\"India\",\"city\":\"Bangalore\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[17.450478,78.381089],\"index\":\"2dsphere\"}},\"uid\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"username\":\"V000000001\",\"phoneNumber\":9640359075,\"firstName\":\"Narayana Murthy\",\"lastName\":\"Chintakayala\",\"Password\":\"316ee70a1be830ce6053917845097f12c2ada7b65a49ed49180fa9390f31c70a8493c516defaa77dda1b567fee80d4149ca8a5db02e820db02baf381ccdbf698\",\"LastPassword\":[],\"Gender\":\"Male\",\"status\":false,\"createdAt\":\"2021-09-22T00:11:45.227Z\",\"lastModifiedAt\":\"2021-09-22T00:11:45.227Z\",\"lastModifiedBy\":\"\",\"otp\":\"\",\"deeplink\":\"https://en-rich.herokuapp.com/?referralid=A000000001\",\"createdBy\":\"Node API Hardcoded\",\"Offers\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"orderBy\":\"1\",\"image\":\"https://picsum.photos/200/300\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\"orderBy\":\"2\",\"image\":\"https://picsum.photos/200/300\"}],\"Product\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"name\":\"Product 0\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"name\":\"Product 1\"}],\"Distance\":10,\"ParentID\":\"\",\"QRCode\":\"\",\"Sliders\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"image\":\"https://picsum.photos/200/300\",\"deepLink\":\"https://picsum.photos/200/300\",\"orderBy\":\"0\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"image\":\"https://picsum.photos/200/300\",\"deepLink\":\"https://picsum.photos/200/300\",\"orderBy\":\"1\"}],\"delivery\":true,\"Membership\":{\"id\":2426,\"image\":\"https://picsum.photos/id/237/200/300\",\"name\":\"Name\"},\"rating\":2.4,\"featuredImage\":\"https://picsum.photos/id/237/200/300\",\"Category\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"name\":\"Category 1\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\"name\":\"Category 2\"}],\"Package\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\"name\":\"Package 2\"}],\"fee\":40},{\"_id\":\"254a74c1b9acc50016439532\",\"Address\":{\"no\":\"5-48\",\"street\":\"New Main\",\"pincode\":500082,\"state\":\"Telangana\",\"country\":\"India\",\"city\":\"Chennai\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[17.437217,78.444264],\"index\":\"2dsphere\"}},\"uid\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"username\":\"V000000002\",\"phoneNumber\":7989367371,\"firstName\":\"Vendor 1\",\"lastName\":\"Vendor 1\",\"Password\":\"316ee70a1be830ce6053917845097f12c2ada7b65a49ed49180fa9390f31c70a8493c516defaa77dda1b567fee80d4149ca8a5db02e820db02baf381ccdbf698\",\"LastPassword\":[],\"Gender\":\"Male\",\"status\":false,\"createdAt\":\"2021-09-22T00:11:45.227Z\",\"lastModifiedAt\":\"2021-09-22T00:11:45.227Z\",\"lastModifiedBy\":\"\",\"otp\":\"\",\"deeplink\":\"https://en-rich.herokuapp.com/?referralid=A000000001\",\"createdBy\":\"Node API Hardcoded\",\"Offers\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"orderBy\":\"1\",\"image\":\"https://picsum.photos/200/300\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\"orderBy\":\"2\",\"image\":\"https://picsum.photos/200/300\"}],\"Product\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"name\":\"Product 0\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"name\":\"Product 1\"}],\"Distance\":10,\"ParentID\":\"\",\"QRCode\":\"\",\"Sliders\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"image\":\"https://picsum.photos/200/300\",\"deepLink\":\"https://picsum.photos/200/300\",\"orderBy\":\"0\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"image\":\"https://picsum.photos/200/300\",\"deepLink\":\"https://picsum.photos/200/300\",\"orderBy\":\"1\"}],\"delivery\":true,\"Membership\":{\"id\":2426,\"image\":\"https://picsum.photos/id/237/200/300\",\"name\":\"Name\"},\"rating\":4,\"featuredImage\":\"https://picsum.photos/id/237/200/300\",\"Category\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c4f\",\"name\":\"Category 15\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\"name\":\"Category 2\"}],\"Package\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\"name\":\"Package 2\"}],\"fee\":40},{\"_id\":\"651a74c1b9acc50016439532\",\"Address\":{\"no\":\"5-48\",\"street\":\"New Main\",\"pincode\":500083,\"state\":\"Telangana\",\"country\":\"India\",\"city\":\"Chennai\",\"geometry\":{\"type\":\"Point\",\"cooridnates\":[13.0826802,80.2707184],\"index\":\"2dsphere\"}},\"uid\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"username\":\"V000000003\",\"phoneNumber\":8179477999,\"firstName\":\"Vendor 2\",\"lastName\":\"Vendor 2\",\"Password\":\"316ee70a1be830ce6053917845097f12c2ada7b65a49ed49180fa9390f31c70a8493c516defaa77dda1b567fee80d4149ca8a5db02e820db02baf381ccdbf698\",\"LastPassword\":[],\"Gender\":\"Male\",\"status\":false,\"createdAt\":\"2021-09-22T00:11:45.227Z\",\"lastModifiedAt\":\"2021-09-22T00:11:45.227Z\",\"lastModifiedBy\":\"\",\"otp\":\"\",\"deeplink\":\"https://en-rich.herokuapp.com/?referralid=A000000001\",\"createdBy\":\"Node API Hardcoded\",\"Offers\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"orderBy\":\"1\",\"image\":\"https://picsum.photos/200/300\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\"orderBy\":\"2\",\"image\":\"https://picsum.photos/200/300\"}],\"Product\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"name\":\"Product 25\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"name\":\"Product 1\"}],\"Distance\":6,\"ParentID\":\"\",\"QRCode\":\"\",\"Sliders\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"image\":\"https://picsum.photos/200/300\",\"deepLink\":\"https://picsum.photos/200/300\",\"orderBy\":\"0\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"image\":\"https://picsum.photos/200/300\",\"deepLink\":\"https://picsum.photos/200/300\",\"orderBy\":\"1\"}],\"delivery\":true,\"Membership\":{\"id\":2426,\"image\":\"https://picsum.photos/id/237/200/300\",\"name\":\"Name\"},\"rating\":4,\"featuredImage\":\"https://picsum.photos/id/237/200/300\",\"Category\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"name\":\"Category 1\"},{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\"name\":\"Category 2\"}],\"Package\":[{\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\"name\":\"Package 1\"}],\"fee\":45},{\"_id\":\"616aa311075db529e8b43f96\",\"Address\":{\"no\":\"5-48\",\"street\":\"New Main\",\"pincode\":500081,\"state\":\"Telangana\",\"country\":\"India\",\"city\":\"Hyderabad\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[17.450478,78.381089],\"index\":\"2dsphere\"}},\"Membership\":{\"id\":\"\",\"image\":\"\",\"name\":\"\"},\"uid\":\"ff415bb0-74f7-46cb-99c5-64d3a70577b9\",\"username\":\"V000000004\",\"phoneNumber\":9550283038,\"firstName\":\"Shop 1\",\"lastName\":\"contct 1\",\"QRCode\":\"\",\"Password\":\"07a9ed0bb456041bf1199a9c9e4038dc\",\"LastPassword\":[\"windows@99\",\"windows@98\"],\"Gender\":\"\",\"status\":false,\"createdAt\":\"2021-10-16T10:01:53.665Z\",\"createdBy\":\"Node API Hardcoded\",\"lastModifiedAt\":\"2021-10-16T10:01:53.665Z\",\"lastModifiedBy\":\"\",\"otp\":null,\"deeplink\":\"\",\"featuredImage\":\"\",\"delivery\":false,\"Distance\":\"\",\"ParentID\":\"\",\"rating\":null,\"fee\":null,\"Sliders\":[],\"Category\":[],\"Offers\":[],\"Product\":[],\"Package\":[],\"__v\":0,\"Bank\":{\"accountholdername\":\"8b95f1af0cf98869e803a8ed38eede77\",\"accountnumber\":\"990ce7e764ebfd27dfbea9c10e02abe4\",\"ifsccode\":\"2f2d91f74249307bda0e3b06deae7304\",\"bankname\":\"9546a11da9eb8f822f0b3caa010de70d5e29a48720ab5c8623996683f096d824\",\"branchname\":\"b8fa5eb326da3e7873ad9e062c108cd7\"},\"isBank\":true,\"gstNo\":\"340706618307\",\"gstPATH\":\"\\\"e0701f522f30fbc71ed5480714120da1\\\"\",\"kycPATH\":\"\\\"3507624932b18123906f23bde2dcf153\\\"\",\"panNo\":\"BTJPC8243C\",\"panPath\":\"\\\"ad3ca10d8f0bf4e00221479971382daa\\\"\"}],\"timestamp\":\"2021-10-27T13:45:07.469Z\"}"
+				}
+			]
+		},
+		{
+			"name": "Associate KYC",
+			"request": {
+				"url": "http://localhost:4000/api/users/kyc",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzNDE0ODQsImV4cCI6MTYzNTM0MTYwNH0.R-FXA9lcG5EPAdBbz2prK82J0_lzPi_mgM43z1wctN4"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "panNo",
+							"value": "BTJPC8243C",
+							"type": "text"
+						},
+						{
+							"key": "aadharNo",
+							"value": "340706618307",
+							"type": "text"
+						},
+						{
+							"key": "aadhar",
+							"type": "file",
+							"src": "MaqboolRequests.PNG",
+							"value": ""
+						},
+						{
+							"key": "pan",
+							"type": "file",
+							"src": "LoanScreenshot.PNG",
+							"value": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "96c68075-80f1-4048-ac01-d60438324b1d",
+					"name": "Associate KYC Success",
+					"originalRequest": {
+						"url": "http://localhost:4000/api/users/kyc",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzNDE0ODQsImV4cCI6MTYzNTM0MTYwNH0.R-FXA9lcG5EPAdBbz2prK82J0_lzPi_mgM43z1wctN4",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "aadharNo",
+									"value": "340706618307",
+									"type": "text"
+								},
+								{
+									"key": "panNo",
+									"value": "BTJPC8243C",
+									"type": "text"
+								},
+								{
+									"key": "aadhar",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "pan",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "98",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:53:43 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"62-0dVCWPju4WV65aQfXtTT4ZoRYTQ\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"name": "keep-alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"success\":true,\"message\":\"KYC Update Success.\",\"timestamp\":\"2021-10-27T13:53:43.075Z\"}"
+				},
+				{
+					"id": "60a5b52f-0778-4916-b62f-e052e340c605",
+					"name": "Invalid Username",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/kyc",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDYiLCJpYXQiOjE2MzM3MTE5NTAsImV4cCI6MTYzMzcxMjA3MH0.kQM_lUZ2KeoLyTauyh8mUl5_YGh0d-9wxxistVg6jkM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "panNo",
+									"value": "BTJPC8243C",
+									"type": "text"
+								},
+								{
+									"key": "aadharNo",
+									"value": "340706618307",
+									"type": "text"
+								},
+								{
+									"key": "aadhar",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "pan",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "118",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:45:46 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"76-8UM41kxWNthKp92fPsaA+D3M5Ak\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":false,\"code\":201,\"Status\":\"Phone Number or Username Doesn't Exist.\",\"timestamp\":\"2021-10-27T13:45:46.915Z\"}"
+				},
+				{
+					"id": "c688a672-28fd-4ec5-ba30-607155e58346",
+					"name": "Both Aadhar and Pan Required",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/kyc",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzNDE0ODQsImV4cCI6MTYzNTM0MTYwNH0.R-FXA9lcG5EPAdBbz2prK82J0_lzPi_mgM43z1wctN4",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "panNo",
+									"value": "BTJPC8243C",
+									"type": "text"
+								},
+								{
+									"key": "aadharNo",
+									"value": "340706618307",
+									"type": "text"
+								},
+								{
+									"key": "aadhar",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "pan",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "113",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:47:15 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"71-Gs1i0+loWL2K9hsJx9BM5gonDBI\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"message\":\"Both aadhar and pan are required.\",\"timestamp\":\"2021-10-27T13:47:15.134Z\"}"
+				}
+			]
+		},
+		{
+			"name": "Upgrade Level",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/upgradelevel",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDkiLCJpYXQiOjE2MzQxNTEwNjgsImV4cCI6MTYzNDE1MTE4OH0.izd6gDfQD9s0z3XmftoZQfdtgy3h0poxMcmiWEf8th8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"levelid\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "2762e703-c288-4dd0-8b69-212a907fa5d1",
+					"name": "Upgrade Level Success",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/upgradelevel",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDkiLCJpYXQiOjE2MzQxNTEwNjgsImV4cCI6MTYzNDE1MTE4OH0.izd6gDfQD9s0z3XmftoZQfdtgy3h0poxMcmiWEf8th8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"levelid\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "101",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:54:42 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"65-DwPuucYLdwIhyB75T5x1YSkknDM\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"success\":true,\"message\":\"Level Upgrade Success.\",\"timestamp\":\"2021-10-27T13:54:42.872Z\"}"
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/dashboard",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"A000000002\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Associate FAQ",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/faq",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Contact US Associate",
+			"request": {
+				"url": "http://localhost:4000/api/users/contactus",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Murthy\",\n\t\"email\":\"murthiich95@gmail.com\",\n\t\"mobile\":\"9640359075\",\n\t\"message\":\"HI HOW ARE YOU\",\n\t\"createdBy\":\"Associate\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "gynealogy",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/gynealogy",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"A000000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://en-rich.herokuapp.com/api/users/all-children?parentUserName=A000000002",
+			"request": {
+				"url": {
+					"raw": "http://en-rich.herokuapp.com/api/users/all-children?parentUserName=A000000002",
+					"protocol": "http",
+					"host": [
+						"en-rich",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"all-children"
+					],
+					"query": [
+						{
+							"key": "parentUserName",
+							"value": "A000000002"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://en-rich.herokuapp.com/api/users/add-children",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/add-children",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"parentUserName\":\"A000000003\",\n\t\"childUserName\":\"A000000008\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://en-rich.herokuapp.com/api/users/add-children",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/add-children",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"parentUserName\":\"A000000003\",\n\t\"childUserName\":\"A000000008\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User Get Next Eligible Level",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/getlevel",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDYiLCJpYXQiOjE2NDAyOTQ1NDUsImV4cCI6MTY0MDI5NDY2NX0.rbQm25S78vcHUPOjZXanPZFjP_SL4Z2hzW7-YtGzCH4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "All Vendor Categories",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/getcategories",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDYiLCJpYXQiOjE2NDAyOTQ1NDUsImV4cCI6MTY0MDI5NDY2NX0.rbQm25S78vcHUPOjZXanPZFjP_SL4Z2hzW7-YtGzCH4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Membership",
+			"request": {
+				"url": "en-rich.herokuapp.com/api/users/getmembership",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTQiLCJpYXQiOjE2MzUzMzk2MjAsImV4cCI6MTYzNTMzOTc0MH0.0yEZdYwBumf8Y7B-IDChVpMQDXoAG14Yl3R4FtdA1C0",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get Associate Profile"
+			},
+			"response": []
+		},
+		{
+			"name": "SEND OTP CODE",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/sendotpcode",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":7989367371\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "VERIFY OTP CODE",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/verifyotpcode",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":9640359075,\n\t\"otp\":387871\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vendor Profile Associate",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/getVendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"V000001014\"\n}"
+				},
+				"description": "to retrieve all use {\"page\":0,1}"
+			},
+			"response": []
+		},
+		{
+			"name": "Get ISLIDERS",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/sliders",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add ISLIDERS",
+			"request": {
+				"url": "http://localhost:4000/api/users/addsliders",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"image\": \"test\",\n\"deeplink\":\"deeplink\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Read Notifications Associate",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/readnotificatons",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Notifications Associate",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/users/allnotificatons",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"V000000001\",\n     \"isRead\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Associate Downline Report",
+			"request": {
+				"url": "http://paizattoapi.paizatto.com/api/users/downlinereport",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"OL00000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Overall Earnback Report",
+			"request": {
+				"url": "http://paizattoapi.paizatto.com/api/users/overallearnback",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"A000012000\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "gynealogy web",
+			"request": {
+				"url": "http://localhost:4000/api/users/gynealogyweb",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"OL00000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1942 @@
+{
+	"variables": [],
+	"info": {
+		"name": "EnrichAdmin",
+		"_postman_id": "b451d9af-9a11-6f3d-d54e-4f607b3c34ed",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add or Update General Settings",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/generalsettings",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fee\":50,\n\t\"gst\":20,\n\t\"logo\":\"https://source.unsplash.com/user/c_v_r\",\n\t\"icon\":\"https://source.unsplash.com/user/c_v_r\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All General Settings",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/GetAllgeneralsettings",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete General Settings",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/deletegeneralsettings",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"6150fd7bf87935e505c1f051\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add or Update Categories",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/categories",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fee\":20,\n    \"gst\":10,\n    \"name\":\"Category 1\",\n    \"membershipid\": 2,\n    \"membershipname\": \"Silver1\",\n    \"membershipvalue\":45\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Categories",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/GetAllcategories",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Categories",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/deletecategories",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"6150fe8cf87935e505c236d2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add or Update Packages",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/packages",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Package 2\",\n    \"amount\": 250,\n    \"point\": 250,\n    \"pointvalue\": 250,\n    \"icon\": \"https://source.unsplash.com/user/c_v_r\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Packages",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/GetAllpackages",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Packages",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/deletepackages",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"61510556f87935e505c402ed\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add or Update Levels",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/levels",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\":\"Level 2\",\r\n    \"icon\": \"ICON URL\",\r\n    \"point\": 21,\r\n    \"max\": 30,\r\n    \"capping\": 40\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Levels",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/GetAlllevels",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Levels",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/deletelevels",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"6151091ef87935e505c4fc27\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register Associate Admin",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/registerAssociate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Murthy\",\n\t\"lastName\":\"CH\",\n\t\"phoneNumber\":9999999998,\n\t\"ReEnterphoneNumber\":9999999998,\n\t\"Password\":\"windows@98\",\n\t\"ReEnterpassword\":\"windows@98\",\n\t\"pincode\":500081,\n\t\"acceptTermsNConditions\":true,\n\t\"ReferralId\":\"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Associate Personal DEtails Admin",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updateAssociate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\":\"Narayana Murthy\",\n\t\"lastName\":\"Chintakayala\",\n\t\"email\":\"murthiich95@gmail.com\",\n\t\"phoneNumber\":\"9999999999\",\n\t\"Gender\":\"Male\",\n\t\"DOB\":\"25/12/1995\",\n\t\"Address\":{\n\t\t\"no\":\"5-48\",\n\t\t\"street\":\"New Main\",\n\t\t\"pincode\":500081,\n\t\t\"state\":\"Telangana\",\n\t\t\"country\":\"India\",\n\t\t\"city\":\"Hyd\",\n\t\t\"lat\":\"\",\n\t\t\"long\":\"\"\n\t},\n\t\"fcmToken\":\"Test Toke\",\n\t\"UPI\":{\n\t\t\"gpay\":\"9640359075@okaxis\",\n\t\t\"phonepe\":\"\",\n\t\t\"paytm\":\"\",\n\t\t\"bhim\":\"\",\n\t\t\"gaxis\":\"9640359075@okaxis\",\n\t\t\"ghdfc\":\"\",\n\t\t\"gicici\":\"\",\n\t\t\"gsbi\":\"\",\n\t\t\"pyes\":\"\",\n\t\t\"picici\":\"\",\n\t\t\"paxis\":\"\"\n\t},\n\t\"username\":\"A000000009\",\n\t\"Bank\":{\n\t\t\"accountholdername\":\"Narayana Murthy\",\n\t\t\"accountnumber\":\"32659927187\",\n\t\t\"ifsccode\":\"SBIN0002750\"\n\t},\n\t\"dashboard\":{\n\t\t\"currentLevel\":\"125\"\n\t}\n}"
+				},
+				"description": "Update Associate Personal DEtails"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Associate",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/deleteAssociate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"A000000015\"\n}"
+				},
+				"description": "{\n\t\"username\":\"V000000004\"\n}\n\n{\"phoneNumber\":9550283038}"
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Register Vendor ",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/registerVendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"shopName\":\"Shop 1\",\r\n\t\"contactpersonName\":\"contct 1\",\r\n\t\"phoneNumber\":9999999998,\r\n\t\"ReEnterphoneNumber\":9999999998,\r\n\t\"Password\":\"windows@98\",\r\n\t\"ReEnterpassword\":\"windows@98\",\r\n\t\"acceptTermsNConditions\":true,\r\n\t\"pincode\":500081,\r\n\t\"employeeMobile\":7989367371,\r\n    \"membershipid\":1,\r\n\t\"Category\": [\r\n\t\t\t{\r\n\t\t\t\t\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c2e\",\r\n\t\t\t\t\"name\":\"Category 1\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"id\":\"477df18b-f49d-4d47-bc0b-389fe9316c3c\",\r\n\t\t\t\t\"name\":\"Category 2\"\r\n\t\t\t}\r\n\t\t]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Update Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updateVendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"V000000001\",\n\t\"Address\": {\n        \"no\": \"5-48\",\n        \"street\": \"New Main\",\n        \"pincode\": 500081,\n        \"state\": \"Telangana\",\n        \"country\": \"India\",\n        \"city\": \"Hyderabad\",\n        \"geometry\": {\n            \"type\": \"Point\",\n            \"coordinates\": [\n                17.450478,\n                78.381089\n            ],\n            \"index\": \"2dsphere\"\n        }\n    },\n    \"Bank\":{\n\t\t\"accountholdername\":\"Narayana Murthy\",\n\t\t\"accountnumber\":\"32659927187\",\n\t\t\"ifsccode\":\"SBIN0002750\"\n\t}\n}"
+				},
+				"description": "Admin Update Vendor"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/deleteVendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"phoneNumber\":9550283038}"
+				},
+				"description": "{\n\t\"username\":\"V000000004\"\n}\n\n{\"phoneNumber\":9550283038}"
+			},
+			"response": []
+		},
+		{
+			"name": "All Vendors Admin",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/listallVendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "All Associate Admin",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/listallAssociate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Associate Profile Admin",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/getAssociate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"A000000009\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Associate KYC",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/kyc",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "panNo",
+							"value": "BTJPC8243C",
+							"type": "text"
+						},
+						{
+							"key": "aadharNo",
+							"value": "340706618307",
+							"type": "text"
+						},
+						{
+							"key": "aadhar",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "pan",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-21 07-47-36.png",
+							"value": ""
+						},
+						{
+							"key": "username",
+							"value": "A000000009",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "082db19d-060f-4f91-8b69-98df019dba82",
+					"name": "Both Aadhar and Pan Required",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/kyc",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzNDE0ODQsImV4cCI6MTYzNTM0MTYwNH0.R-FXA9lcG5EPAdBbz2prK82J0_lzPi_mgM43z1wctN4",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "panNo",
+									"value": "BTJPC8243C",
+									"type": "text"
+								},
+								{
+									"key": "aadharNo",
+									"value": "340706618307",
+									"type": "text"
+								},
+								{
+									"key": "aadhar",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "pan",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "113",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:47:15 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"71-Gs1i0+loWL2K9hsJx9BM5gonDBI\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":201,\"success\":false,\"message\":\"Both aadhar and pan are required.\",\"timestamp\":\"2021-10-27T13:47:15.134Z\"}"
+				},
+				{
+					"id": "cff70a12-0943-469c-b192-28b2a682acb6",
+					"name": "Associate KYC Success",
+					"originalRequest": {
+						"url": "http://localhost:4000/api/users/kyc",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMTMiLCJpYXQiOjE2MzUzNDE0ODQsImV4cCI6MTYzNTM0MTYwNH0.R-FXA9lcG5EPAdBbz2prK82J0_lzPi_mgM43z1wctN4",
+								"warning": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "aadharNo",
+									"value": "340706618307",
+									"type": "text"
+								},
+								{
+									"key": "panNo",
+									"value": "BTJPC8243C",
+									"type": "text"
+								},
+								{
+									"key": "aadhar",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "pan",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "98",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:53:43 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"62-0dVCWPju4WV65aQfXtTT4ZoRYTQ\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "keep-alive",
+							"value": "timeout=5",
+							"name": "keep-alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":200,\"success\":true,\"message\":\"KYC Update Success.\",\"timestamp\":\"2021-10-27T13:53:43.075Z\"}"
+				},
+				{
+					"id": "a828263f-8559-4401-a44e-adc10f4e85ae",
+					"name": "Invalid Username",
+					"originalRequest": {
+						"url": "http://en-rich.herokuapp.com/api/users/kyc",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkEwMDAwMDAwMDYiLCJpYXQiOjE2MzM3MTE5NTAsImV4cCI6MTYzMzcxMjA3MH0.kQM_lUZ2KeoLyTauyh8mUl5_YGh0d-9wxxistVg6jkM"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "panNo",
+									"value": "BTJPC8243C",
+									"type": "text"
+								},
+								{
+									"key": "aadharNo",
+									"value": "340706618307",
+									"type": "text"
+								},
+								{
+									"key": "aadhar",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "pan",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "access-control-allow-origin",
+							"value": "http://localhost:8080",
+							"name": "access-control-allow-origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "connection",
+							"value": "keep-alive",
+							"name": "connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "content-length",
+							"value": "118",
+							"name": "content-length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"name": "content-type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 27 Oct 2021 13:45:46 GMT",
+							"name": "date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"76-8UM41kxWNthKp92fPsaA+D3M5Ak\"",
+							"name": "etag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "server",
+							"value": "Cowboy",
+							"name": "server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "vary",
+							"value": "Origin",
+							"name": "vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "via",
+							"value": "1.1 vegur",
+							"name": "via",
+							"description": "Informs the client of proxies through which the response was sent."
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express",
+							"name": "x-powered-by",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\":false,\"code\":201,\"Status\":\"Phone Number or Username Doesn't Exist.\",\"timestamp\":\"2021-10-27T13:45:46.915Z\"}"
+				}
+			]
+		},
+		{
+			"name": "Get Vendor Profile Admin",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/getVendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"V000000001\"\n}"
+				},
+				"description": "to retrieve all use {\"page\":0,1}"
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor KYC Admin",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/vendorkyc",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "panNo",
+							"value": "BTJPC8243C",
+							"type": "text"
+						},
+						{
+							"key": "gstNo",
+							"value": "340706618307",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "V000001014",
+							"type": "text"
+						},
+						{
+							"key": "pan",
+							"type": "file",
+							"src": "download.jpg",
+							"value": ""
+						},
+						{
+							"key": "gst",
+							"type": "file",
+							"src": "download.jpg",
+							"value": ""
+						},
+						{
+							"key": "kyc",
+							"type": "file",
+							"src": "download.jpg",
+							"value": ""
+						},
+						{
+							"key": "status",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "kycStatus",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "kycDate",
+							"value": "11-07-2022",
+							"type": "text"
+						},
+						{
+							"key": "kycReason",
+							"value": "KYC Reason",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Associate Dashboard By Prince",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/dashboard",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"A000000001\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Multiple images in vendor",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updateshop",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "shopName",
+							"value": "te",
+							"type": "text"
+						},
+						{
+							"key": "contactpersonName",
+							"value": "dfs",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "\"{\\n  \\\"no\\\": \\\"5-47-a\\\",\\n  \\\"street\\\": \\\"Colony\\\",\\n  \\\"city\\\": \\\"Hyderabad\\\",\\n  \\\"pincode\\\": 500081,\\n  \\\"state\\\": \\\"TG\\\",\\n  \\\"country\\\": \\\"India\\\",\\n  \\\"geometry\\\": {\\n    \\\"type\\\": \\\"Point\\\",\\n    \\\"coordinates\\\": [\\n      4.67878,\\n      5.6788\\n    ],\\n    \\\"index\\\": \\\"2dsphere\\\"\\n  }\\n}\"",
+							"type": "text"
+						},
+						{
+							"key": "delivery",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "windows@98",
+							"type": "text"
+						},
+						{
+							"key": "shop",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "shop",
+							"type": "file",
+							"src": [],
+							"value": ""
+						},
+						{
+							"key": "offers",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "offers",
+							"type": "file",
+							"src": [],
+							"value": ""
+						},
+						{
+							"key": "QRCode",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "featuredImage",
+							"type": "file",
+							"src": "/home/murthy/Pictures/Screenshot from 2021-11-08 12-42-25.png",
+							"value": ""
+						},
+						{
+							"key": "pincode",
+							"value": "500081",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "V000000001",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Add Products",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/addproduct",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Product 2\"\n}"
+				},
+				"description": "Admin Update Vendor"
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Get Products",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/getproducts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Update Products",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updateproducts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"name\":\"HI\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/admins/billing",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/billing",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"transactionDate\":\"25-02-2022\",\n\t\"TransactionAmount\":200,\n\t\"AssociateUsername\":\"A000000002\",\n\t\"MerchantUsername\":\"V000000012\",\n\t\"category\":5,\n\t\"utrnumber\":\"24569874\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Categories",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updatecategories",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":2,\n\t\"fee\":18,\n    \"gst\":28,\n    \"name\":\"Category 1\",\n    \"Membership\":{\n    \t\"id\":4,\n    \t\"name\":\"Silver Membership\",\n    \t\"value\":20\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "1. Associate Report",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/associatereport",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"A000000005\",\n\t\"city\":\"Chennai\",\n\t\"state\":\"Tamil Nadu\",\n\t\"phoneNumber\":9840115738,\n\t\"status\":\"Network/New User\"\n}"
+				},
+				"description": "Filters:\n{\n\t\"username\": \"A000000005\",\n\t\"city\":\"Chennai\",\n\t\"state\":\"Tamil Nadu\",\n\t\"phoneNumber\":9840115738,\n\t\"status\":\"Network/New User\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "2. Active Inactive Report",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/activeinactivereport",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"A000000005\",\n\t\"status\":\"Active/Inactive\"\n}"
+				},
+				"description": "{\n\t\"username\": \"A000000005\",\n\t\"status\":\"Active\",\n\t\"status\":\"Inactive\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "3. Associate Blank Bank Details Report",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/blankbankdetails",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"A000000005\",\n\t\"phoneNumber\":9840115738,\n\t\"status\":\"Network/New User\"\n}"
+				},
+				"description": "{\n\t\"username\": \"A000000005\",\n\t\"phoneNumber\":9840115738,\n\t\"status\":\"Network/New User\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Send Vendor App Link",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/sendvendorapplink",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"V000000062\"\n}"
+				},
+				"description": "{\r\n    \"username:\"V000000062\"\r\n}\r\n{\r\n    \"phoneNumber\":9640359075\r\n}"
+			},
+			"response": [
+				{
+					"id": "6463878f-3623-477b-ad50-d7c64138e700",
+					"name": "Send Vendor App Link",
+					"originalRequest": {
+						"url": "http://localhost:4000/api/admins/sendvendorapplink",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"V000000062\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:8080"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "116"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"74-UjlBmI7xsnLLnBGGbyhRxelbsVg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Apr 2022 13:50:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"status\": \"App Link sent successful on 9640359075\",\n    \"timestamp\": \"2022-04-16T13:50:39.436Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Send Associate App Link",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/sendassociateapplink",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":9640359075\n}"
+				},
+				"description": "{\r\n    \"username\":\"A000000001\"\r\n}\r\n{\r\n    \"phoneNumber\":9640359075\r\n}"
+			},
+			"response": [
+				{
+					"id": "9e6fa11d-a9df-4a99-a41d-a8f60997574d",
+					"name": "Send Vendor App Link",
+					"originalRequest": {
+						"url": "http://localhost:4000/api/admins/sendvendorapplink",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"V000000062\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:8080"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "116"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"74-UjlBmI7xsnLLnBGGbyhRxelbsVg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Apr 2022 13:50:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"status\": \"App Link sent successful on 9640359075\",\n    \"timestamp\": \"2022-04-16T13:50:39.436Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "VendorBank Update SMS",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/vendorbankupdate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"V000000062\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "38467e86-7e06-4e91-956c-f528b5f97c89",
+					"name": "Send Vendor App Link",
+					"originalRequest": {
+						"url": "http://localhost:4000/api/admins/sendvendorapplink",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"V000000062\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:8080"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "116"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"74-UjlBmI7xsnLLnBGGbyhRxelbsVg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Apr 2022 13:50:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"status\": \"App Link sent successful on 9640359075\",\n    \"timestamp\": \"2022-04-16T13:50:39.436Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Associate Bank Update",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/associatebankupdate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":9640359075\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "61d05adf-32d8-4861-ae90-46211589be67",
+					"name": "Send Vendor App Link",
+					"originalRequest": {
+						"url": "http://localhost:4000/api/admins/sendvendorapplink",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"V000000062\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:8080"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "116"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"74-UjlBmI7xsnLLnBGGbyhRxelbsVg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Apr 2022 13:50:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"status\": \"App Link sent successful on 9640359075\",\n    \"timestamp\": \"2022-04-16T13:50:39.436Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/api/admins/adduser",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/adduser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\":\"Murthy\",\n    \"lastName\":\"murthii11\",\n    \"phoneNumber\":9640359021,\n    \"password\":\"123\",\n    \"roleid\":\"1\",\n    \"rolename\":\"Role 1\",\n    \"employee\":[9640359075,9963420605]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/getuser",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/getuser",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Murthy\",\r\n    \"phoneNumber\":9640359077,\r\n    \"username\":\"murthii11\",\r\n    \"password\":\"123\",\r\n    \"roleid\":\"12\",\r\n    \"id\":1\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/updateuser",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updateuser",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"111\",\r\n    \"phoneNumber\":9640359077,\r\n    \"username\":\"111\",\r\n    \"password\":\"111\",\r\n    \"roleid\":\"11\",\r\n    \"id\":1\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/activeinactiveuseruser",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/activeinactiveuser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/addmenu",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/addmenu",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Menu 2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/getmenu",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/getmenu",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n     \"status\": 0,\r\n    \"name\": \"Menu 3\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/updatemenu",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updatemenu",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"status\":1\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/addrole",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/addrole",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Role 3\",\n    \"permissions\": [\n        {\n            \"id\": 1,\n            \"menuid\": 3,\n            \"read\": false,\n            \"edit\": false,\n            \"delete\": false\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/getrole",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/getrole",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"name\": \"Role 3\",\r\n    \"status\": 0\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/updaterole",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updaterole",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3,\r\n    \"permissions\": [\r\n                {\r\n                    \"id\": 1,\r\n                    \"menuid\": 3,\r\n                    \"read\": true,\r\n                    \"edit\": false,\r\n                    \"delete\": false,\r\n                    \"_id\": \"626016ec931e4911e481fcd8\"\r\n                },\r\n                 {\r\n                    \"id\": 2,\r\n                    \"menuid\": 3,\r\n                    \"read\": true,\r\n                    \"edit\": true,\r\n                    \"delete\": false,\r\n                    \"_id\": \"626016ec931e4911e481fcd8\"\r\n                }\r\n            ]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Export Vendor Data To Excel",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/exportvendor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/api/admins/loginuser",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/loginuser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"phoneNumber\":9640359011,\n    \"password\":\"123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vendor Profile Employee Mobile",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/getvendoremployeemobile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeMobile\":7989367371\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Membership",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/membership",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Membership Name\",\n    \"image\": \"Image URL\",\n    \"value\":10\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Membership",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/updatemembership",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":5,\n    \"name\": \"new Name\",\n    \"image\": \"Image URL\",\n    \"value\":15\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Active Inactive Membership",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/activeinactivemembership",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":5\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vendor Employee Mobile ALl",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/getvendoremployeemobileall",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phoneNumber\":9640359021\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Dashboard",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/admindashboard",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add ISLIDERS",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/addsliders",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"image\": \"test\",\n\"deeplink\":\"deeplink\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get ISLIDERS",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admin/sliders",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE BANK TRANSACTION DATA",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/savebanktransaction",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"VendorID\":\"V000000003\",\r\n    \"shopName\": \"Shop Test\",\r\n    \"TxnStatus\":0,\r\n    \"PayerAmount\": 200,\r\n    \"PayerName\": \"Test Payer\",\r\n    \"PayerVa\":  \"test@ybl\",\r\n    \"BankRRN\": 2135868665,\r\n    \"AssociateRegNo\": \"A000000002\",\r\n    \"AssociatePhoneNo\": 9640359075,\r\n    \"TxnInitDate\": \"05-08-2022\",\r\n    \"TxnCompletionDate\": \"05-08-2022\",\r\n    \"Commission\": 44,\r\n    \"GST\": 8,\r\n    \"TotalCommission\": 10,\r\n    \"PayabletoVendor\": 34,\r\n    \"PayoutStatus\": 1,\r\n    \"UTRNumber\": 2587413698\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET BANK TRANSACTION DATA",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/getbanktransaction",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE  BANK TRANSACTION DATA",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/updatebanktransaction",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BankRRN\": 2135868665,\r\n    \"TxnCompletionDate\": \"05-08-2022\",\r\n    \"PayoutStatus\": 1,\r\n    \"UTRNumber\": 2587413699\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "EXECUTE TRANSACTION",
+			"request": {
+				"url": "http://en-rich.herokuapp.com/api/admins/executetransaction",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vendorUsername\": \"V000001005\",\r\n  \"tranAmount\": 100,\r\n  \"paymentType\":\"UPI\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add FAQ",
+			"request": {
+				"url": "http://localhost:4000/api/admins/addfaq",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"category\": \"General\",\r\n  \"question\": \"How are you\",\r\n  \"answer\":\"Good\",\r\n  \"userType\":\"Vendor\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Points and Purchase Amount",
+			"request": {
+				"url": "http://localhost:4000/api/admins/addpointspurchaseamount",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"month\":8\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Referral ID PhoneNumber Associate",
+			"request": {
+				"url": "http://localhost:4000/api/admins/updatereferralidphoneassociate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\"  : \"A000000001\",\r\n    \"referralid\": \"A000000011\",\r\n    \"phoneNumber\": 9640359075\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

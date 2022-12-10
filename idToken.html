@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="sign-in-button">Sign In</button>
+    <p id="id-token"></p>
+    <div id="recaptcha-container"></div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAT2qRQuiRPJuA1Zr9ixcfpoGND-iXc0YM",
+      authDomain: "wesource-8b69e.firebaseapp.com",
+      databaseURL: "https://wesource-8b69e-default-rtdb.firebaseio.com",
+      projectId: "wesource-8b69e",
+      storageBucket: "wesource-8b69e.appspot.com",
+      messagingSenderId: "884544177061",
+      appId: "1:884544177061:web:ea6b72273ba4aaca3b5e4c",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth().settings.appVerificationDisabledForTesting = true;
+    var appVerifier = new firebase.auth.RecaptchaVerifier(
+      "recaptcha-container"
+    );
+    const onSignInSubmit = () => {
+      console.log("bruh");
+      const phoneNumber = "+91 9999999999";
+      firebase
+        .auth()
+        .signInWithPhoneNumber(phoneNumber, appVerifier)
+        .then((confirmationResult) => {
+          // SMS sent. Prompt user to type the code from the message, then sign the
+          // user in with confirmationResult.confirm(code).
+          window.confirmationResult = confirmationResult;
+          window.confirmationResult.confirm("111111");
+          // ...
+        })
+        .catch((error) => {
+          // Error; SMS not sent
+          console.error(error);
+          // ...
+        });
+    };
+    const button = document.getElementById("sign-in-button");
+    button.addEventListener("click", onSignInSubmit);
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        const ptag = document.getElementById('id-token')
+        user.getIdToken(true).then((idtoken) => {
+          console.log(idtoken)
+          ptag.innerHTML = idtoken
+        })
+      } else {
+        alert("No user!");
+      }
+    });
+  </script>
+</html>
