@@ -109,9 +109,9 @@ router.post('/isfavourite', userController.isfavourite);
 
 router.get('/isfavourite', userController.isfavouritedetails); 
 
-router.get('/usertranscation', userController.usertranscationdetails); 
+//router.get('/usertranscation', userController.usertranscationdetails); 
 
-router.get('/userreferrals', userController.userreferralsdetails); 
+//router.get('/userreferrals', userController.userreferralsdetails); 
 
 
 router.get('/', function(req, res, next) {
