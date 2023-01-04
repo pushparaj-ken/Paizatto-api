@@ -46,6 +46,10 @@ const excel = require("exceljs");
 var fs = require('fs');
 var path = require('path');
 
+
+let distanceApi = require('google-distance-matrix');
+distanceApi.key("AIzaSyCSz9NtHfJEldYLoLbpdI4CabliqnBUQvE");
+
 const SendOTPAssociate = catchAsync(async(req, res) => {
     let values = req.body;
     DecodeJWTToken(values).then((decodedResult) => {
@@ -2308,7 +2312,7 @@ const UpgradeLevelAssociate = (values, LevelData, UserData) => {
     });
 }
 
-const GetAllVendors = catchAsync(async(req, res) => {
+const GetAllVendors = catchAsync(async (req, res) => {
     try {
         let values = req.body;
         console.log("values", values)
@@ -2322,8 +2326,8 @@ const GetAllVendors = catchAsync(async(req, res) => {
 
         if (values.hasOwnProperty("product")) {
             let reqProducts = values.product.split(",");
-            query["Product"] = { $elemMatch: { name: reqProducts } }
-        }
+            query["Product"] = { $elemMatch: { name: reqProducts } } 
+        } 
         if (values.hasOwnProperty("location")) {
             if (values.location.hasOwnProperty("maxDistance") && values.location.maxDistance > 6000) {
                 values.location.maxDistance = 1000000;
@@ -2334,7 +2338,7 @@ const GetAllVendors = catchAsync(async(req, res) => {
                         type: "Point",
                         coordinates: [parseFloat(values.location.coordinate1), parseFloat(values.location.coordinate2)],
                     },
-                    $maxDistance: values.location.maxDistance,
+                    $maxDistance: values.location.maxDistance, // + 1000, // adding 1km to search query just as a precaution, we are anyway going to remove these results using google distance api 
                     $minDistance: 0,
                 }
             }
@@ -2356,7 +2360,7 @@ const GetAllVendors = catchAsync(async(req, res) => {
         }
 
         if (values.hasOwnProperty("shopName")) {
-            query.firstName = values.shopName
+            query.$or = [{ firstName: { $regex: values.shopName, $options: 'i' } }, { lastName: { $regex: values.shopName, $options: 'i' } }];
         }
         let primarycategories = []
         if (values.hasOwnProperty("primaryCategory")) {
@@ -2400,6 +2404,7 @@ const GetAllVendors = catchAsync(async(req, res) => {
         query.kycStatus = 0;
         //Limit and Skip Record's Logic
         let limit = 20;
+        let extras = 5; // Extras because we are going to remove some records using google distance api
         let skip = 0;
         if (values.hasOwnProperty("page")) {
             if (values.page > 0) {
@@ -2409,7 +2414,8 @@ const GetAllVendors = catchAsync(async(req, res) => {
         let allMembership = await adminController.GetAllMemberships();
         let allArea = await adminController.GetAllAreas();
         let allCategories = await adminController.GetAllCategoriesForListAllVendor();
-        await Vendor.find(query).limit(limit).skip(skip).lean().exec().then((Result) => {
+        try {
+            let Result = await Vendor.find(query).limit(limit + extras).skip(skip).lean().exec();
             console.log("query----->", query)
             if (Result) {
                 console.log("Result------->", Result.length)
@@ -2459,33 +2465,103 @@ const GetAllVendors = catchAsync(async(req, res) => {
                     }
                 }
 
+                let responseData = Result;
+                if (Result.length > 0 && values.hasOwnProperty("location") && values.location.hasOwnProperty("coordinate1") && values.location.hasOwnProperty("coordinate2") && values.location.coordinate1 != "" && values.location.coordinate2 != "") {
 
-                res.send({
-                    success: true,
-                    code: 200,
-                    Status: "Vendor Data Retrieved Success.",
-                    Data: Result,
-                    "timestamp": new Date()
-                })
+                    let source = [`${parseFloat(values.location.coordinate1)},${parseFloat(values.location.coordinate2)}`];
+                    let destinations = [];
+                    for (each in Result) {
+                        destinations.push(`${Result[each].Address.geometry.coordinates[0]},${Result[each].Address.geometry.coordinates[1]}`);
+                    }
+                    //! MAX 25 SOURCE && 25 DESTINATIONS
+                    distanceApi.matrix(source, destinations, function (err, distances) {
+                        if (!err && distances.hasOwnProperty("rows") && distances.rows.length > 0 && distances.rows[0].hasOwnProperty("elements")) {
+                            let finalResult = [];
+
+                            for (let i = 0; i < distances.rows[0].elements.length; i++) {
+                                if (distances.rows[0].elements[i].status === "OK") {
+                                    responseData[i]['google_distance'] = distances.rows[0].elements[i].distance.value;
+                                }
+                                else {
+                                    responseData[i]['google_distance'] = 10000000
+                                }
+                            }
+                            responseData = responseData.slice().sort((a, b) => {
+                                return a.google_distance - b.google_distance;
+                            });
+
+                            for (let i = 0; i < responseData.length; i++) {
+                                if (responseData[i].google_distance <= values.location.maxDistance) {
+                                    finalResult.push(responseData[i]);
+                                }
+                            }
+
+                            console.log("prevResult---->", Result.length)
+                            responseData = finalResult;
+                            // if responseData have more than 20 then send only first 20
+                            if (responseData.length > limit) {
+                                responseData = responseData.slice(0, limit);
+                            }
+                            console.log("finalResult---->", responseData.length)
+                            return res.send({
+                                success: true,
+                                code: 200,
+                                Status: "Vendor Data Retrieved Success.",
+                                Data: responseData,
+                                "timestamp": new Date()
+                            });
+                        }
+                        else if (!err) {
+                            return res.send({
+                                success: true,
+                                code: 200,
+                                Status: "Vendor Data Retrieved Success.",
+                                Data: responseData,
+                                "timestamp": new Date()
+                            });
+                        }
+                        else {
+                            return res.send({
+                                success: false,
+                                code: 201,
+                                Status: "Error in Retrieving.",
+                                "timestamp": new Date()
+                            });
+                        }
+                    });
+                }
+                else {
+                    // if responseData have more than 20 then send only first 20
+                    if (responseData.length > limit) {
+                        responseData = responseData.slice(0, limit);
+                    }
+                    return res.send({
+                        success: true,
+                        code: 200,
+                        Status: "Vendor Data Retrieved Success.",
+                        Data: responseData,
+                        "timestamp": new Date()
+                    })
+                }
             } else {
-                res.send({
+                return res.send({
                     success: false,
                     code: 201,
                     Status: "Error in Retrieving.",
                     "timestamp": new Date()
                 });
             }
-        }).catch((err) => {
+        } catch (err) {
             console.log(err);
-            res.send({
+            return res.send({
                 success: false,
                 code: 201,
                 Status: "Database Error.",
                 "timestamp": new Date()
             });
-        })
+        }
     } catch (err) {
-        res.send({
+        return res.send({
             success: false,
             code: 201,
             Status: err,
